@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0" charset="utf-8">
+<link id="css" rel="stylesheet" href="css/hrz.css" type="text/css">
+<script src="scripts/enshrouded.js"></script>
+</head>
+<body onload="init()" cz-shortcut-listen="true">
+    
+    <svg id="mySvg" scale="1" posx="0" posy="0" xmlns="http://localhost/enshrouded/index.html/svg">
+
+        <!-- main group, this is what scales and everything is centered on -->
+        <g id="svgGroup" transform="translate(957, -47.5) scale(0.5000000000000001)">
+
+            <defs>
+                <filter id="auraShadow" x="" y="" width="250%" height="250%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="20" flood-color="#ffee99ee" />
+                </filter>
+            </defs>
+
+            <!-- background names for the main and sub classes -->
+            <g id="textGroup" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+                <text class="mainClass" x="1500" y="0" dx="-250" dy="70">WIZARD</text>
+                <text class="subClass" x="1300" y="-550" dx="-100" dy="20">NECROMANCER</text>
+                <text class="mainClass" x="1100" y="-1100" dx="-350" dy="70">DRUID</text>
+                <text class="subClass" x="550" y="-1300" dx="-150" dy="20">BEASTMASTER</text>
+                <text class="mainClass" x="0" y="-1500" dx="-450" dy="70">RANGER</text>
+                <text class="subClass" x="-550" y="-1300" dx="-200" dy="20">SABOTEUR</text>
+                <text class="mainClass" x="-1100" y="-1100" dx="-400" dy="70">ROGUE</text>
+                <text class="subClass" x="-1300" y="-550" dx="-200" dy="20">BLADEMASTER</text>
+                <text class="mainClass" x="-1500" y="0" dx="-800" dy="70">BERSERKER</text>
+                <text class="subClass" x="-1300" y="550" dx="-150" dy="20">BARBARIAN</text>
+                <text class="mainClass" x="-1100" y="1100" dx="-500" dy="70">WARRIOR</text>
+                <text class="subClass" x="-550" y="1300" dx="-150" dy="20">CHAMPION</text>
+                <text class="mainClass" x="0" y="1500" dx="-400" dy="70">KNIGHT</text>
+                <text class="subClass" x="550" y="1300" dx="-150" dy="20">TEMPLAR</text>
+                <text class="mainClass" x="1100" y="1100" dx="-400" dy="70">CLERIC</text>
+                <text class="subClass" x="1300" y="550" dx="-100" dy="20">BATTLEMAGE</text>
+            </g>
+
+            <!-- connection lines between nodes -->
+            <g id="lineGroup">
+
+                <!-- BERSERKER -->
+                <line id="ber00-ber01" x1="-419" y1="-0" x2="-503" y2="-0" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber01-ber02" x1="-542" y1="-1" x2="-634" y2="-2" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber02-ber03" x1="-693" y1="-2" x2="-836" y2="-2" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber03-ber04" x1="-875" y1="-1" x2="-1026" y2="-1" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber04-ber05" x1="-1065" y1="-1" x2="-1187" y2="-2" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber05-ber06" x1="-1247" y1="-3" x2="-1380" y2="-3" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber06-ber07" x1="-1420" y1="-3" x2="-1547" y2="-3" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber07-ber08" x1="-1587" y1="-3" x2="-1693" y2="-3" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber08-ber09" x1="-1752" y1="-2" x2="-1876" y2="-1" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber03-ber11" x1="-871" y1="10" x2="-1022" y2="135" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber04-ber10" x1="-1060" y1="-14" x2="-1194" y2="-138" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber05-ber12" x1="-1239" y1="16" x2="-1377" y2="134" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber06-ber13" x1="-1414" y1="-16" x2="-1545" y2="-143" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ber07-ber14" x1="-1581" y1="11" x2="-1701" y2="132" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- BARBARIAN -->
+                <line id="bar01-ber05" x1="-1328" y1="457" x2="-1224" y2="26" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bar01-bar06" x1="-1350" y1="513" x2="-1445" y2="682" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bar01-bar05" x1="-1362" y1="473" x2="-1533" y2="386" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bar01-bar03" x1="-1314" y1="465" x2="-1213" y2="364" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bar01-bar02" x1="-1306" y1="482" x2="-1039" y2="441" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bar01-bar04" x1="-1328" y1="516" x2="-1281" y2="709" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bar01-war14" x1="-1313" y1="507" x2="-1032" y2="763" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- WARRIOR -->
+                <line id="war00-war01" x1="-296" y1="296" x2="-364" y2="364" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war01-war02" x1="-393" y1="392" x2="-454" y2="452" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war02-war03" x1="-482" y1="480" x2="-560" y2="559" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war03-war04" x1="-602" y1="601" x2="-681" y2="679" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war04-war05" x1="-710" y1="707" x2="-781" y2="779" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war05-war06" x1="-810" y1="808" x2="-878" y2="876" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war06-war07" x1="-921" y1="919" x2="-1006" y2="1004" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war07-war08" x1="-1035" y1="1033" x2="-1101" y2="1097" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war08-war09" x1="-1144" y1="1140" x2="-1248" y2="1246" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war02-war11" x1="-488" y1="466" x2="-670" y2="468" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war02-war10" x1="-469" y1="485" x2="-473" y2="655" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war05-war14" x1="-815" y1="793" x2="-980" y2="785" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war05-war12" x1="-795" y1="813" x2="-795" y2="979" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war07-war13" x1="-1040" y1="1014" x2="-1223" y2="970" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war07-war15" x1="-1018" y1="1038" x2="-992" y2="1209" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war10-war04" x1="-503" y1="686" x2="-676" y2="692" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war11-war04" x1="-699" y1="498" x2="-696" y2="673" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war14-war07" x1="-1011" y1="813" x2="-1020" y2="999" stroke="#444444cc" stroke-width="6"></line>
+                <line id="war12-war07" x1="-824" y1="1010" x2="-1001" y2="1018" stroke="#444444cc" stroke-width="6"></line>
+                
+                <!-- CHAMPION -->
+                <line id="cha07-kni07" x1="-577" y1="1341" x2="-188" y2="1380" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cha07-war07" x1="-612" y1="1326" x2="-1005" y2="1031" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cha07-cha04" x1="-605" y1="1320" x2="-666" y2="1184" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cha07-cha01" x1="-589" y1="1320" x2="-469" y2="1031" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cha07-cha02" x1="-581" y1="1326" x2="-484" y2="1251" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cha07-cha05" x1="-616" y1="1342" x2="-809" y2="1382" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cha07-cha06" x1="-597" y1="1358" x2="-600" y2="1523" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cha07-cha03" x1="-580" y1="1349" x2="-432" y2="1446" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- KNIGHT -->
+                <line id="kni00-kni01" x1="0" y1="419" x2="1" y2="504" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni01-kni02" x1="1" y1="543" x2="-2" y2="619" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni02-kni03" x1="-3" y1="678" x2="-1" y2="763" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni03-kni04" x1="-1" y1="803" x2="-1" y2="902" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni04-kni05" x1="0" y1="961" x2="0" y2="1052" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni05-kni06" x1="0" y1="1091" x2="0" y2="1206" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni06-kni09" x1="0" y1="1245" x2="0" y2="1363" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni09-kni10" x1="0" y1="1402" x2="0" y2="1507" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni10-kni11" x1="-1" y1="1566" x2="-2" y2="1664" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni11-kni12" x1="-2" y1="1703" x2="-1" y2="1837" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni02-kni13" x1="-26" y1="669" x2="-135" y2="766" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni02-kni14" x1="18" y1="669" x2="119" y2="762" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni14-kni04" x1="121" y1="804" x2="19" y2="910" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni13-kni04" x1="-135" y1="807" x2="-23" y2="911" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni04-kni16" x1="-25" y1="949" x2="-177" y2="1057" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni04-kni15" x1="22" y1="950" x2="150" y2="1056" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni06-kni07" x1="-15" y1="1239" x2="-154" y2="1369" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni06-kni08" x1="13" y1="1240" x2="139" y2="1368" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni10-kni17" x1="-25" y1="1554" x2="-167" y2="1658" stroke="#444444cc" stroke-width="6"></line>
+                <line id="kni10-kni18" x1="24" y1="1553" x2="164" y2="1645" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- TEMPLAR -->
+                <line id="tem07-kni08" x1="492" y1="1369" x2="173" y2="1382" stroke="#444444cc" stroke-width="6"></line>
+                <line id="tem07-cle08" x1="525" y1="1354" x2="922" y2="950" stroke="#444444cc" stroke-width="6"></line>
+                <line id="tem07-tem03" x1="493" y1="1360" x2="369" y2="1301" stroke="#444444cc" stroke-width="6"></line>
+                <line id="tem07-tem02" x1="504" y1="1350" x2="355" y2="988" stroke="#444444cc" stroke-width="6"></line>
+                <line id="tem07-tem01" x1="511" y1="1349" x2="505" y2="1206" stroke="#444444cc" stroke-width="6"></line>
+                <line id="tem07-tem04" x1="528" y1="1357" x2="695" y2="1243" stroke="#444444cc" stroke-width="6"></line>
+                <line id="tem07-tem06" x1="529" y1="1378" x2="671" y2="1458" stroke="#444444cc" stroke-width="6"></line>
+                <line id="tem07-tem05" x1="511" y1="1388" x2="507" y2="1495" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- CLERIC -->
+                <line id="cle00-cle01" x1="296" y1="295" x2="346" y2="345" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle01-cle03" x1="375" y1="373" x2="543" y2="540" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle03-cle04" x1="572" y1="569" x2="634" y2="632" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle04-cle05" x1="677" y1="675" x2="747" y2="743" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle05-cle07" x1="775" y1="772" x2="826" y2="825" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle07-cle08" x1="868" y1="868" x2="921" y2="921" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle08-cle09" x1="950" y1="949" x2="1014" y2="1013" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle09-cle10" x1="1057" y1="1055" x2="1130" y2="1127" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle10-cle11" x1="1159" y1="1156" x2="1292" y2="1291" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle01-cle06" x1="362" y1="378" x2="375" y2="502" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle01-cle02" x1="380" y1="361" x2="490" y2="375" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle03-cle15" x1="556" y1="574" x2="545" y2="730" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle03-cle13" x1="577" y1="553" x2="711" y2="546" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle09-cle18" x1="1063" y1="1045" x2="1266" y2="1130" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle15-cle14" x1="562" y1="783" x2="691" y2="940" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle16-cle17" x1="965" y1="1194" x2="1120" y2="1283" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle16-cle08" x1="939" y1="1149" x2="936" y2="955" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle14-cle08" x1="740" y1="960" x2="916" y2="938" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle12-cle08" x1="939" y1="760" x2="936" y2="916" stroke="#444444cc" stroke-width="6"></line>
+                <line id="cle13-cle12" x1="762" y1="565" x2="918" y2="710" stroke="#444444cc" stroke-width="6"></line>
+                
+
+                <!-- BATTLEMAGE -->
+                <line id="cle08-bat08" x1="947" y1="919" x2="1246" y2="502" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bat08-wiz15" x1="1262" y1="466" x2="1312" y2="246" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bat08-bat01" x1="1239" y1="478" x2="1193" y2="458" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bat01-bat02" x1="1136" y1="449" x2="1002" y2="461" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bat01-bat03" x1="1145" y1="424" x2="1080" y2="354" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bat08-bat05" x1="1275" y1="475" x2="1343" y2="434" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bat08-bat04" x1="1266" y1="504" x2="1296" y2="573" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bat08-bat06" x1="1277" y1="484" x2="1540" y2="464" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bat08-bat07" x1="1275" y1="495" x2="1586" y2="667" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- WIZARD -->
+                <line id="wiz00-wiz01" x1="420" y1="0" x2="470" y2="0" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz01-wiz02" x1="510" y1="0" x2="640" y2="0" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz02-wiz06" x1="699" y1="0" x2="830" y2="-1" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz06-wiz08" x1="869" y1="-1" x2="969" y2="-1" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz08-wiz11" x1="1009" y1="-1" x2="1122" y2="-1" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz11-wiz13" x1="1161" y1="0" x2="1297" y2="0" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz13-wiz16" x1="1357" y1="0" x2="1529" y2="0" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz16-wiz21" x1="1588" y1="0" x2="1792" y2="0" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz02-wiz05" x1="646" y1="-19" x2="603" y2="-55" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz02-wiz03" x1="670" y1="-30" x2="670" y2="-120" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz02-wiz04" x1="693" y1="-19" x2="736" y2="-55" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz02-wiz24" x1="646" y1="19" x2="603" y2="55" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz02-wiz22" x1="670" y1="30" x2="670" y2="120" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz02-wiz23" x1="693" y1="19" x2="736" y2="55" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz06-wiz07" x1="863" y1="-17" x2="984" y2="-158" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz07-wiz12" x1="1033" y1="-185" x2="1137" y2="-199" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz12-wiz13" x1="1185" y1="-180" x2="1308" y2="-23" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz06-wiz09" x1="865" y1="10" x2="984" y2="112" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz09-wiz10" x1="1036" y1="138" x2="1142" y2="159" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz10-wiz13" x1="1192" y1="144" x2="1306" y2="21" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz10-wiz15" x1="1199" y1="177" x2="1298" y2="219" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz15-wiz18" x1="1335" y1="219" x2="1451" y2="169" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz18-wiz16" x1="1479" y1="144" x2="1544" y2="26" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz12-wiz14" x1="1194" y1="-215" x2="1289" y2="-253" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz14-wiz17" x1="1325" y1="-251" x2="1448" y2="-185" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz17-wiz16" x1="1475" y1="-158" x2="1544" y2="-26" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz16-wiz19" x1="1573" y1="-25" x2="1638" y2="-137" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz16-wiz20" x1="1576" y1="24" x2="1640" y2="117" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz11-wiz14" x1="1152" y1="-17" x2="1297" y2="-244" stroke="#444444cc" stroke-width="6"></line>
+                <line id="wiz11-wiz15" x1="1154" y1="14" x2="1304" y2="211" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- NECROMANCER -->
+                <line id="nec01-wiz14" x1="1332" y1="-592" x2="1309" y2="-280" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec01-dru08" x1="1323" y1="-628" x2="1060" y2="-1033" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec01-nec02" x1="1314" y1="-611" x2="1038" y2="-611" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec01-nec03" x1="1317" y1="-600" x2="1168" y2="-499" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec01-nec08" x1="1345" y1="-628" x2="1427" y2="-746" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec08-nec04" x1="1415" y1="-764" x2="1198" y2="-719" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec08-nec05" x1="1421" y1="-790" x2="1357" y2="-842" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec08-nec06" x1="1459" y1="-797" x2="1503" y2="-882" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec01-nec09" x1="1353" y1="-616" x2="1628" y2="-672" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec01-nec10" x1="1353" y1="-605" x2="1724" y2="-488" stroke="#444444cc" stroke-width="6"></line>
+                <line id="nec01-nec07" x1="1342" y1="-593" x2="1410" y2="-453" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- DRUID -->
+                <line id="dru00-dru01" x1="296" y1="-296" x2="365" y2="-365" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru01-dru05" x1="394" y1="-394" x2="478" y2="-478" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru05-dru02" x1="521" y1="-521" x2="585" y2="-585" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru02-dru06" x1="614" y1="-614" x2="725" y2="-725" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru06-dru07" x1="754" y1="-754" x2="835" y2="-835" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru07-dru09" x1="864" y1="-864" x2="928" y2="-928" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru09-dru08" x1="971" y1="-971" x2="1035" y2="-1035" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru08-dru19" x1="1064" y1="-1064" x2="1163" y2="-1165" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru19-dru20" x1="1206" y1="-1208" x2="1303" y2="-1305" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru05-dru03" x1="473" y1="-513" x2="406" y2="-546" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru05-dru04" x1="513" y1="-473" x2="546" y2="-406" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru06-dru11" x1="720" y1="-740" x2="670" y2="-740" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru06-dru12" x1="740" y1="-760" x2="740" y2="-810" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru06-dru13" x1="760" y1="-740" x2="810" y2="-740" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru06-dru10" x1="740" y1="-720" x2="740" y2="-670" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru09-dru14" x1="922" y1="-961" x2="767" y2="-1028" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru09-dru15" x1="954" y1="-979" x2="983" y2="-1159" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru09-dru18" x1="979" y1="-954" x2="1150" y2="-976" stroke="#444444cc" stroke-width="6"></line>
+                <line id="dru09-dru16" x1="961" y1="-922" x2="1028" y2="-767" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- BEASTMASTER -->
+                <line id="bea01-dru08" x1="642" y1="-1238" x2="1031" y2="-1058" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bea01-bea03" x1="635" y1="-1272" x2="763" y2="-1409" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bea01-bea04" x1="642" y1="-1262" x2="898" y2="-1374" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bea01-bea05" x1="644" y1="-1250" x2="818" y2="-1249" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bea01-bea07" x1="610" y1="-1280" x2="561" y2="-1596" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bea01-bea06" x1="588" y1="-1237" x2="469" y2="-1177" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bea01-bea02" x1="585" y1="-1254" x2="355" y2="-1280" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bea01-ran16" x1="591" y1="-1269" x2="203" y2="-1564" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- RANGER -->
+                <line id="ran00-ran01" x1="0" y1="-420" x2="0" y2="-506" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran01-ran02" x1="0" y1="-545" x2="0" y2="-670" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran02-ran03" x1="-1" y1="-730" x2="-1" y2="-850" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran03-ran06" x1="-1" y1="-890" x2="-1" y2="-970" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran06-ran07" x1="-1" y1="-1010" x2="-1" y2="-1090" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran07-ran08" x1="-1" y1="-1130" x2="-1" y2="-1231" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran08-ran09" x1="-1" y1="-1291" x2="-1" y2="-1399" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran09-ran10" x1="-1" y1="-1439" x2="-1" y2="-1569" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran10-ran11" x1="-1" y1="-1628" x2="-2" y2="-1712" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran11-ran12" x1="-2" y1="-1771" x2="-1" y2="-1899" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran02-ran05" x1="18" y1="-723" x2="144" y2="-876" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran02-ran04" x1="-20" y1="-723" x2="-145" y2="-876" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran08-ran15" x1="21" y1="-1281" x2="163" y2="-1408" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran08-ran13" x1="-24" y1="-1279" x2="-177" y2="-1403" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran09-ran16" x1="13" y1="-1432" x2="157" y2="-1562" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran09-ran18" x1="-16" y1="-1431" x2="-182" y2="-1571" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran10-ran17" x1="19" y1="-1620" x2="158" y2="-1770" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran10-ran14" x1="-23" y1="-1619" x2="-187" y2="-1765" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran13-ran18" x1="-201" y1="-1451" x2="-204" y2="-1561" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran18-ran14" x1="-205" y1="-1620" x2="-209" y2="-1756" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran15-ran16" x1="184" y1="-1458" x2="181" y2="-1553" stroke="#444444cc" stroke-width="6"></line>
+                <line id="ran16-ran17" x1="179" y1="-1612" x2="179" y2="-1762" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- SABOTEUR -->
+                <line id="ran18-sab03" x1="-234" y1="-1586" x2="-429" y2="-1553" stroke="#444444cc" stroke-width="6"></line>
+                <line id="sab03-sab02" x1="-479" y1="-1526" x2="-725" y2="-1251" stroke="#444444cc" stroke-width="6"></line>
+                <line id="sab02-rog12" x1="-772" y1="-1215" x2="-866" y2="-1167" stroke="#444444cc" stroke-width="6"></line>
+                <line id="sab03-sab06" x1="-451" y1="-1578" x2="-430" y2="-1669" stroke="#444444cc" stroke-width="6"></line>
+                <line id="sab02-sab01" x1="-716" y1="-1231" x2="-539" y2="-1242" stroke="#444444cc" stroke-width="6"></line>
+                <line id="sab03-sab01" x1="-463" y1="-1519" x2="-505" y2="-1274" stroke="#444444cc" stroke-width="6"></line>
+                <line id="sab01-sab04" x1="-498" y1="-1217" x2="-448" y2="-1089" stroke="#444444cc" stroke-width="6"></line>
+                <line id="sab02-sab05" x1="-741" y1="-1258" x2="-708" y2="-1454" stroke="#444444cc" stroke-width="6"></line>
+                <line id="sab03-sab05" x1="-487" y1="-1541" x2="-675" y2="-1491" stroke="#444444cc" stroke-width="6"></line>
+                <line id="sab03-sab07" x1="-483" y1="-1566" x2="-656" y2="-1686" stroke="#444444cc" stroke-width="6"></line>
+                
+                <!-- ROGUE -->
+                <line id="rog00-rog01" x1="-295" y1="-296" x2="-360" y2="-361" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog01-rog02" x1="-388" y1="-390" x2="-459" y2="-460" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog02-rog03" x1="-501" y1="-503" x2="-567" y2="-571" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog03-rog04" x1="-595" y1="-599" x2="-664" y2="-665" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog04-rog05" x1="-693" y1="-693" x2="-768" y2="-768" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog05-rog06" x1="-811" y1="-811" x2="-883" y2="-884" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog06-rog07" x1="-911" y1="-913" x2="-1007" y2="-1010" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog07-rog08" x1="-1035" y1="-1038" x2="-1095" y2="-1097" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog08-rog09" x1="-1138" y1="-1139" x2="-1207" y2="-1208" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog09-rog10" x1="-1250" y1="-1251" x2="-1328" y2="-1330" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog05-rog14" x1="-819" y1="-789" x2="-943" y2="-784" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog14-rog15" x1="-996" y1="-802" x2="-1108" y2="-887" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog15-rog16" x1="-1152" y1="-928" x2="-1233" y2="-1016" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog16-rog09" x1="-1250" y1="-1068" x2="-1232" y2="-1200" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog09-rog13" x1="-1199" y1="-1233" x2="-1089" y2="-1245" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog13-rog12" x1="-1033" y1="-1234" x2="-919" y2="-1168" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog12-rog11" x1="-876" y1="-1128" x2="-801" y2="-1016" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog11-rog05" x1="-785" y1="-961" x2="-789" y2="-819" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog08-rog15" x1="-1119" y1="-1088" x2="-1129" y2="-935" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog08-rog12" x1="-1087" y1="-1122" x2="-922" y2="-1149" stroke="#444444cc" stroke-width="6"></line>
+                <line id="rog02-rog17" x1="-475" y1="-511" x2="-456" y2="-600" stroke="#444444cc" stroke-width="6"></line>
+
+                <!-- BLADEMASTER -->
+                <line id="rog15-bla01" x1="-1141" y1="-877" x2="-1252" y2="-547" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bla01-ber06" x1="-1269" y1="-490" x2="-1394" y2="-22" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bla01-bla03" x1="-1233" y1="-509" x2="-1062" y2="-454" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bla01-bla02" x1="-1291" y1="-515" x2="-1456" y2="-492" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bla01-bla05" x1="-1289" y1="-530" x2="-1668" y2="-681" stroke="#444444cc" stroke-width="6"></line>
+                <line id="bla01-bla04" x1="-1275" y1="-545" x2="-1372" y2="-748" stroke="#444444cc" stroke-width="6"></line>
+                
+            </g>
+
+            <!-- non clickable circles -->
+            <g id="circleGroup">
+
+                <!-- just a gold circle for the starting point nodes -->
+                <circle cx="0" cy="0" r="400" fill="#ffee9911" stroke="#ffee99cc" stroke-width="4" pointer-events="none"></circle>
+
+                <!-- class starter nodes, they do nothing and are checked, mostly to facilitate the depth first search -->
+                <circle class="info" id="kni00" cx="0" cy="400" r="20" fill="#903983"></circle>
+                <image x="-20" y="380" height="40" width="40" href="img/shade.png"></image>
+
+                <circle class="info" id="war00" cx="-282" cy="282" r="20" fill="#db421f"></circle>
+                <image x="-302" y="262" height="40" width="40" href="img/shade.png"></image>
+
+                <circle class="info" id="ber00" cx="-400" cy="0" r="20" fill="#d98a09"></circle>
+                <image x="-420" y="-20" height="40" width="40" href="img/shade.png"></image>
+
+                <circle class="info" id="rog00" cx="-282" cy="-282" r="20" fill="#AAAA14"></circle>
+                <image x="-302" y="-302" height="40" width="40" href="img/shade.png"></image>
+
+                <circle class="info" id="ran00" cx="0" cy="-400" r="20" fill="#59A86C"></circle>
+                <image x="-20" y="-420" height="40" width="40" href="img/shade.png"></image>
+
+                <circle class="info" id="dru00" cx="282" cy="-282" r="20" fill="#54A2A2"></circle>
+                <image x="262" y="-302" height="40" width="40" href="img/shade.png"></image>
+
+                <circle class="info" id="wiz00" cx="400" cy="0" r="20" fill="#3C6DB6"></circle>
+                <image x="380" y="-20" height="40" width="40" href="img/shade.png"></image>
+
+                <circle class="info" id="cle00" cx="282" cy="282" r="20" fill="#5D52B9"></circle>
+                <image x="262" y="262" height="40" width="40" href="img/shade.png"></image>
+
+            </g>
+
+            <!-- all clickable nodes here -->
+            <g id="nodeGroup">
+
+                <!-- NON-CLASS -->
+                <circle class="nodes info" id="non01" cx="0" cy="0" r="50" fill="#444444"></circle>
+                <circle class="border" id="non01-border" cx="0" cy="0" r="53" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-50" y="-50" height="100" width="100" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non02" cx="-200" cy="0" r="30" fill="#444444"></circle>
+                <circle class="border" id="non02-border" cx="-200" cy="0" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-230" y="-30" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non03" cx="0" cy="-200" r="30" fill="#444444"></circle>
+                <circle class="border" id="non03-border" cx="0" cy="-200" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-30" y="-230" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non04" cx="186" cy="-189" r="30" fill="#444444"></circle>
+                <circle class="border" id="non04-border" cx="186" cy="-189" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="156" y="-219" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non05" cx="0" cy="200" r="30" fill="#444444"></circle>
+                <circle class="border" id="non05-border" cx="0" cy="200" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-30" y="170" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non06" cx="0" cy="-300" r="30" fill="#444444"></circle>
+                <circle class="border" id="non06-border" cx="0" cy="-300" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-30" y="-330" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non07" cx="-65" cy="292" r="30" fill="#444444"></circle>
+                <circle class="border" id="non07-border" cx="-65" cy="292" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-95" y="262" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non08" cx="65" cy="292" r="30" fill="#444444"></circle>
+                <circle class="border" id="non08-border" cx="65" cy="292" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="35" y="262" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non09" cx="170" cy="41" r="30" fill="#444444"></circle>
+                <circle class="border" id="non09-border" cx="170" cy="41" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="140" y="11" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non10" cx="292" cy="67" r="30" fill="#444444"></circle>
+                <circle class="border" id="non10-border" cx="292" cy="67" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="262" y="37" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non11" cx="-181" cy="-198" r="30" fill="#444444"></circle>
+                <circle class="border" id="non11-border" cx="-181" cy="-198" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-211" y="-228" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non12" cx="-292" cy="104" r="30" fill="#444444"></circle>
+                <circle class="border" id="non12-border" cx="-292" cy="104" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-322" y="74" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non13" cx="-141" cy="172" r="30" fill="#444444"></circle>
+                <circle class="border" id="non13-border" cx="-141" cy="172" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-171" y="142" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non14" cx="-286" cy="-120" r="20" fill="#444444"></circle>
+                <circle class="border" id="non14-border" cx="-286" cy="-120" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-306" y="-140" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non15" cx="-101" cy="-98" r="20" fill="#444444"></circle>
+                <circle class="border" id="non15-border" cx="-101" cy="-98" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-121" y="-118" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non16" cx="-126" cy="-312" r="20" fill="#444444"></circle>
+                <circle class="border" id="non16-border" cx="-126" cy="-312" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-146" y="-332" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non17" cx="96" cy="-74" r="20" fill="#444444"></circle>
+                <circle class="border" id="non17-border" cx="96" cy="-74" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="76" y="-94" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non18" cx="-110" cy="50" r="20" fill="#444444"></circle>
+                <circle class="border" id="non18-border" cx="-110" cy="50" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-130" y="30" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non19" cx="94" cy="-252" r="20" fill="#444444"></circle>
+                <circle class="border" id="non19-border" cx="94" cy="-252" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="74" y="-272" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non20" cx="94" cy="142" r="20" fill="#444444"></circle>
+                <circle class="border" id="non20-border" cx="94" cy="142" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="74" y="122" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="non21" cx="201" cy="243" r="20" fill="#444444"></circle>
+                <circle class="border" id="non21-border" cx="201" cy="243" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="181" y="223" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="non22" cx="297" cy="-125" r="30" fill="#444444"></circle>
+                <circle class="border" id="non22-border" cx="297" cy="-125" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="267" y="-155" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- WIZARD -->
+                <circle class="nodes info" id="wiz01" cx="490" cy="0" r="20" fill="#444444"></circle>
+                <circle class="border" id="wiz01-border" cx="490" cy="0" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="470" y="-23" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz02" cx="670" cy="0" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz02-border" cx="670" cy="0" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="640" y="-30" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz03" cx="670" cy="-150" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz03-border" cx="670" cy="-150" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="640" y="-180" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz04" cx="760" cy="-75" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz04-border" cx="760" cy="-75" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="730" y="-105" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz05" cx="580" cy="-75" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz05-border" cx="580" cy="-75" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="550" y="-105" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz22" cx="670" cy="150" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz22-border" cx="670" cy="150" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="640" y="120" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz23" cx="760" cy="75" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz23-border" cx="760" cy="75" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="730" y="45" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz24" cx="580" cy="75" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz24-border" cx="580" cy="75" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="550" y="45" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz06" cx="850" cy="-2" r="20" fill="#444444"></circle>
+                <circle class="border" id="wiz06-border" cx="850" cy="-2" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="830" y="-22" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz07" cx="1004" cy="-181" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz07-border" cx="1004" cy="-181" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="974" y="-211" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="wiz08" cx="989" cy="-1" r="20" fill="#444444"></circle>
+                <circle class="border" id="wiz08-border" cx="989" cy="-1" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="969" y="-21" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz09" cx="1007" cy="132" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz09-border" cx="1007" cy="132" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="977" y="102" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz10" cx="1172" cy="166" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz10-border" cx="1172" cy="166" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1142" y="136" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz11" cx="1142" cy="-1" r="20" fill="#444444"></circle>
+                <circle class="border" id="wiz11-border" cx="1142" cy="-1" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1122" y="-21" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz12" cx="1167" cy="-204" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz12-border" cx="1167" cy="-204" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1137" y="-234" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="wiz13" cx="1327" cy="0" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz13-border" cx="1327" cy="0" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1297" y="-30" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz14" cx="1308" cy="-261" r="20" fill="#444444"></circle>
+                <circle class="border" id="wiz14-border" cx="1308" cy="-261" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1288" y="-281" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz15" cx="1317" cy="227" r="20" fill="#444444"></circle>
+                <circle class="border" id="wiz15-border" cx="1317" cy="227" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1297" y="207" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz16" cx="1559" cy="0" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz16-border" cx="1559" cy="0" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1529" y="-30" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="wiz17" cx="1466" cy="-176" r="20" fill="#444444"></circle>
+                <circle class="border" id="wiz17-border" cx="1466" cy="-176" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1446" y="-196" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz18" cx="1470" cy="162" r="20" fill="#444444"></circle>
+                <circle class="border" id="wiz18-border" cx="1470" cy="162" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1450" y="142" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz19" cx="1653" cy="-163" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz19-border" cx="1653" cy="-163" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1623" y="-193" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="wiz20" cx="1658" cy="142" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz20-border" cx="1658" cy="142" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1628" y="112" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="wiz21" cx="1822" cy="-1" r="30" fill="#444444"></circle>
+                <circle class="border" id="wiz21-border" cx="1822" cy="-1" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1792" y="-31" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- NECROMANCER -->
+                <circle class="nodes info" id="nec01" cx="1334" cy="-612" r="20" fill="#444444"></circle>
+                <circle class="border" id="nec01-border" cx="1334" cy="-612" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1314" y="-632" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="nec02" cx="1009" cy="-611" r="30" fill="#444444"></circle>
+                <circle class="border" id="nec02-border" cx="1009" cy="-611" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="979" y="-641" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="nec03" cx="1144" cy="-483" r="30" fill="#444444"></circle>
+                <circle class="border" id="nec03-border" cx="1144" cy="-483" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1114" y="-513" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="nec04" cx="1169" cy="-713" r="30" fill="#444444"></circle>
+                <circle class="border" id="nec04-border" cx="1169" cy="-713" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1139" y="-743" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="nec05" cx="1334" cy="-862" r="30" fill="#444444"></circle>
+                <circle class="border" id="nec05-border" cx="1334" cy="-862" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1304" y="-892" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="nec06" cx="1518" cy="-909" r="30" fill="#444444"></circle>
+                <circle class="border" id="nec06-border" cx="1518" cy="-909" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1488" y="-939" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="nec07" cx="1423" cy="-426" r="30" fill="#444444"></circle>
+                <circle class="border" id="nec07-border" cx="1423" cy="-426" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1393" y="-456" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="nec08" cx="1445" cy="-771" r="30" fill="#444444"></circle>
+                <circle class="border" id="nec08-border" cx="1445" cy="-771" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1415" y="-801" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="nec09" cx="1658" cy="-679" r="30" fill="#444444"></circle>
+                <circle class="border" id="nec09-border" cx="1658" cy="-679" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1628" y="-709" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="nec10" cx="1753" cy="-479" r="30" fill="#444444"></circle>
+                <circle class="border" id="nec10-border" cx="1753" cy="-479" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1723" y="-509" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- DRUID -->
+                <circle class="nodes info" id="dru01" cx="380" cy="-380" r="20" fill="#444444"></circle>
+                <circle class="border" id="dru01-border" cx="380" cy="-380" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="360" y="-400" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru02" cx="600" cy="-600" r="20" fill="#444444"></circle>
+                <circle class="border" id="dru02-border" cx="600" cy="-600" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="580" y="-620" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru03" cx="380" cy="-560" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru03-border" cx="380" cy="-560" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="350" y="-590" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru04" cx="560" cy="-380" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru04-border" cx="560" cy="-380" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="530" y="-410" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru05" cx="500" cy="-500" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru05-border" cx="500" cy="-500" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="470" y="-530" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru06" cx="740" cy="-740" r="20" fill="#444444"></circle>
+                <circle class="border" id="dru06-border" cx="740" cy="-740" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="720" y="-760" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru07" cx="850" cy="-850" r="20" fill="#444444"></circle>
+                <circle class="border" id="dru07-border" cx="850" cy="-850" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="830" y="-870" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru08" cx="1050" cy="-1050" r="20" fill="#444444"></circle>
+                <circle class="border" id="dru08-border" cx="1050" cy="-1050" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1030" y="-1070" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru09" cx="950" cy="-950" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru09-border" cx="950" cy="-950" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="920" y="-980" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru10" cx="740" cy="-640" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru10-border" cx="740" cy="-640" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="710" y="-670" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru11" cx="640" cy="-740" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru11-border" cx="640" cy="-740" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="610" y="-770" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru12" cx="740" cy="-840" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru12-border" cx="740" cy="-840" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="710" y="-870" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="dru13" cx="840" cy="-740" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru13-border" cx="840" cy="-740" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="810" y="-770" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="dru14" cx="740" cy="-1040" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru14-border" cx="740" cy="-1040" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="710" y="-1070" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru15" cx="988" cy="-1189" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru15-border" cx="988" cy="-1189" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="958" y="-1219" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru16" cx="1040" cy="-740" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru16-border" cx="1040" cy="-740" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1010" y="-770" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru18" cx="1180" cy="-981" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru18-border" cx="1180" cy="-981" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1150" y="-1011" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru19" cx="1185" cy="-1187" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru19-border" cx="1185" cy="-1187" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1155" y="-1217" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="dru20" cx="1325" cy="-1327" r="30" fill="#444444"></circle>
+                <circle class="border" id="dru20-border" cx="1325" cy="-1327" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1295" y="-1357" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- BEASTMASTER -->
+                <circle class="nodes info" id="bea01" cx="615" cy="-1251" r="30" fill="#444444"></circle>
+                <circle class="border" id="bea01-border" cx="615" cy="-1251" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="585" y="-1281" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bea02" cx="326" cy="-1284" r="30" fill="#444444"></circle>
+                <circle class="border" id="bea02-border" cx="326" cy="-1284" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="296" y="-1314" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bea03" cx="784" cy="-1431" r="30" fill="#444444"></circle>
+                <circle class="border" id="bea03-border" cx="784" cy="-1431" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="754" y="-1461" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="bea04" cx="926" cy="-1386" r="30" fill="#444444"></circle>
+                <circle class="border" id="bea04-border" cx="926" cy="-1386" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="896" y="-1416" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="bea05" cx="848" cy="-1249" r="30" fill="#444444"></circle>
+                <circle class="border" id="bea05-border" cx="848" cy="-1249" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="818" y="-1279" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bea06" cx="443" cy="-1164" r="30" fill="#444444"></circle>
+                <circle class="border" id="bea06-border" cx="443" cy="-1164" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="413" y="-1194" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bea07" cx="557" cy="-1626" r="30" fill="#444444"></circle>
+                <circle class="border" id="bea07-border" cx="557" cy="-1626" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="527" y="-1656" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+            
+                <!-- RANGER -->
+                <circle class="nodes info" id="ran01" cx="0" cy="-526" r="20" fill="#444444"></circle>
+                <circle class="border" id="ran01-border" cx="0" cy="-526" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-20" y="-546" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran02" cx="-1" cy="-700" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran02-border" cx="-1" cy="-700" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-31" y="-730" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran03" cx="-1" cy="-870" r="20" fill="#444444"></circle>
+                <circle class="border" id="ran03-border" cx="-1" cy="-870" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-21" y="-890" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran04" cx="-165" cy="-900" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran04-border" cx="-165" cy="-900" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-195" y="-930" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran05" cx="164" cy="-900" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran05-border" cx="164" cy="-900" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="134" y="-930" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran06" cx="-1" cy="-990" r="20" fill="#444444"></circle>
+                <circle class="border" id="ran06-border" cx="-1" cy="-990" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-21" y="-1010" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran07" cx="-1" cy="-1110" r="20" fill="#444444"></circle>
+                <circle class="border" id="ran07-border" cx="-1" cy="-1110" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-21" y="-1130" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="ran08" cx="-1" cy="-1261" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran08-border" cx="-1" cy="-1261" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-31" y="-1291" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran09" cx="-1" cy="-1419" r="20" fill="#444444"></circle>
+                <circle class="border" id="ran09-border" cx="-1" cy="-1419" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-21" y="-1439" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran10" cx="-1" cy="-1599" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran10-border" cx="-1" cy="-1599" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-31" y="-1629" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran11" cx="-3" cy="-1742" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran11-border" cx="-3" cy="-1742" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-33" y="-1772" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="ran12" cx="-1" cy="-1929" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran12-border" cx="-1" cy="-1929" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-31" y="-1959" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="ran13" cx="-201" cy="-1422" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran13-border" cx="-201" cy="-1422" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-231" y="-1452" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran14" cx="-210" cy="-1786" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran14-border" cx="-210" cy="-1786" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-240" y="-1816" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran15" cx="186" cy="-1429" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran15-border" cx="186" cy="-1429" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="156" y="-1459" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran16" cx="180" cy="-1583" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran16-border" cx="180" cy="-1583" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="150" y="-1613" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran17" cx="179" cy="-1792" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran17-border" cx="179" cy="-1792" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="149" y="-1822" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ran18" cx="-205" cy="-1591" r="30" fill="#444444"></circle>
+                <circle class="border" id="ran18-border" cx="-205" cy="-1591" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-235" y="-1621" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- SABOTEUR -->
+                <circle class="nodes info" id="sab01" cx="-510" cy="-1245" r="30" fill="#444444"></circle>
+                <circle class="border" id="sab01-border" cx="-510" cy="-1245" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-540" y="-1275" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="sab02" cx="-746" cy="-1229" r="30" fill="#444444"></circle>
+                <circle class="border" id="sab02-border" cx="-746" cy="-1229" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-776" y="-1259" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="sab03" cx="-459" cy="-1549" r="30" fill="#444444"></circle>
+                <circle class="border" id="sab03-border" cx="-459" cy="-1549" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-489" y="-1579" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="sab04" cx="-437" cy="-1062" r="30" fill="#444444"></circle>
+                <circle class="border" id="sab04-border" cx="-437" cy="-1062" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-467" y="-1092" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="sab05" cx="-704" cy="-1484" r="30" fill="#444444"></circle>
+                <circle class="border" id="sab05-border" cx="-704" cy="-1484" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-734" y="-1514" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="sab06" cx="-423" cy="-1699" r="30" fill="#444444"></circle>
+                <circle class="border" id="sab06-border" cx="-423" cy="-1699" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-453" y="-1729" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="sab07" cx="-681" cy="-1704" r="30" fill="#444444"></circle>
+                <circle class="border" id="sab07-border" cx="-681" cy="-1704" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-711" y="-1734" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+            
+                <!-- ROGUE -->
+                <circle class="nodes info" id="rog01" cx="-374" cy="-376" r="20" fill="#444444"></circle>
+                <circle class="border" id="rog01-border" cx="-374" cy="-376" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-394" y="-396" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="rog02" cx="-481" cy="-482" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog02-border" cx="-481" cy="-482" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-511" y="-512" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="rog03" cx="-581" cy="-586" r="20" fill="#444444"></circle>
+                <circle class="border" id="rog03-border" cx="-581" cy="-586" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-601" y="-606" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="rog04" cx="-679" cy="-679" r="20" fill="#444444"></circle>
+                <circle class="border" id="rog04-border" cx="-679" cy="-679" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-699" y="-699" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="rog05" cx="-790" cy="-790" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog05-border" cx="-790" cy="-790" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-820" y="-820" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="rog06" cx="-898" cy="-899" r="20" fill="#444444"></circle>
+                <circle class="border" id="rog06-border" cx="-898" cy="-899" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-918" y="-919" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="rog07" cx="-1021" cy="-1025" r="20" fill="#444444"></circle>
+                <circle class="border" id="rog07-border" cx="-1021" cy="-1025" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1041" y="-1045" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="rog08" cx="-1117" cy="-1118" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog08-border" cx="-1117" cy="-1118" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1147" y="-1148" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="rog09" cx="-1229" cy="-1230" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog09-border" cx="-1229" cy="-1230" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1259" y="-1260" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="rog10" cx="-1350" cy="-1352" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog10-border" cx="-1350" cy="-1352" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1380" y="-1382" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+    
+                <circle class="nodes info" id="rog11" cx="-785" cy="-991" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog11-border" cx="-785" cy="-991" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-815" y="-1021" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="rog12" cx="-893" cy="-1154" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog12-border" cx="-893" cy="-1154" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-923" y="-1184" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="rog13" cx="-1060" cy="-1249" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog13-border" cx="-1060" cy="-1249" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1090" y="-1279" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="rog14" cx="-973" cy="-784" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog14-border" cx="-973" cy="-784" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1003" y="-814" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="rog15" cx="-1132" cy="-906" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog15-border" cx="-1132" cy="-906" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1162" y="-936" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="rog16" cx="-1254" cy="-1039" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog16-border" cx="-1254" cy="-1039" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1284" y="-1069" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="rog17" cx="-451" cy="-630" r="30" fill="#444444"></circle>
+                <circle class="border" id="rog17-border" cx="-451" cy="-630" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-481" y="-660" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- BLADEMASTER -->
+                <circle class="nodes info" id="bla01" cx="-1262" cy="-519" r="30" fill="#444444"></circle>
+                <circle class="border" id="bla01-border" cx="-1262" cy="-519" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1292" y="-549" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bla02" cx="-1486" cy="-489" r="30" fill="#444444"></circle>
+                <circle class="border" id="bla02-border" cx="-1486" cy="-489" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1516" y="-519" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bla03" cx="-1034" cy="-445" r="30" fill="#444444"></circle>
+                <circle class="border" id="bla03-border" cx="-1034" cy="-445" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1064" y="-475" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bla04" cx="-1386" cy="-775" r="30" fill="#444444"></circle>
+                <circle class="border" id="bla04-border" cx="-1386" cy="-775" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1416" y="-805" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="bla05" cx="-1696" cy="-693" r="30" fill="#444444"></circle>
+                <circle class="border" id="bla05-border" cx="-1696" cy="-693" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1726" y="-723" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+            
+                <!-- BERSERKER -->
+                <circle class="nodes info" id="ber01" cx="-523" cy="-1" r="20" fill="#444444"></circle>
+                <circle class="border" id="ber01-border" cx="-523" cy="-1" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-543" y="-21" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ber02" cx="-664" cy="-3" r="30" fill="#444444"></circle>
+                <circle class="border" id="ber02-border" cx="-664" cy="-3" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-694" y="-33" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ber03" cx="-856" cy="-2" r="20" fill="#444444"></circle>
+                <circle class="border" id="ber03-border" cx="-856" cy="-2" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-876" y="-22" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ber04" cx="-1046" cy="-1" r="20" fill="#444444"></circle>
+                <circle class="border" id="ber04-border" cx="-1046" cy="-1" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1066" y="-21" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+    
+                <circle class="nodes info" id="ber05" cx="-1217" cy="-3" r="30" fill="#444444"></circle>
+                <circle class="border" id="ber05-border" cx="-1217" cy="-3" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1247" y="-33" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ber06" cx="-1400" cy="-3" r="20" fill="#444444"></circle>
+                <circle class="border" id="ber06-border" cx="-1400" cy="-3" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1420" y="-23" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ber07" cx="-1567" cy="-3" r="20" fill="#444444"></circle>
+                <circle class="border" id="ber07-border" cx="-1567" cy="-3" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1587" y="-23" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ber08" cx="-1723" cy="-3" r="30" fill="#444444"></circle>
+                <circle class="border" id="ber08-border" cx="-1723" cy="-3" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1753" y="-33" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="ber09" cx="-1906" cy="-1" r="30" fill="#444444"></circle>
+                <circle class="border" id="ber09-border" cx="-1906" cy="-1" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1936" y="-31" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+    
+                <circle class="nodes info" id="ber10" cx="-1217" cy="-159" r="30" fill="#444444"></circle>
+                <circle class="border" id="ber10-border" cx="-1217" cy="-159" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1247" y="-189" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="ber11" cx="-1046" cy="155" r="30" fill="#444444"></circle>
+                <circle class="border" id="ber11-border" cx="-1046" cy="155" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1076" y="125" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ber12" cx="-1400" cy="154" r="30" fill="#444444"></circle>
+                <circle class="border" id="ber12-border" cx="-1400" cy="154" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1430" y="124" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="ber13" cx="-1567" cy="-164" r="30" fill="#444444"></circle>
+                <circle class="border" id="ber13-border" cx="-1567" cy="-164" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1597" y="-194" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="ber14" cx="-1723" cy="154" r="30" fill="#444444"></circle>
+                <circle class="border" id="ber14-border" cx="-1723" cy="154" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1753" y="124" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- BARBARIAN -->
+                <circle class="nodes info" id="bar01" cx="-1336" cy="487" r="30" fill="#444444"></circle>
+                <circle class="border" id="bar01-border" cx="-1336" cy="487" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1366" y="457" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bar02" cx="-1010" cy="437" r="30" fill="#444444"></circle>
+                <circle class="border" id="bar02-border" cx="-1010" cy="437" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1040" y="407" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bar03" cx="-1192" cy="343" r="30" fill="#444444"></circle>
+                <circle class="border" id="bar03-border" cx="-1192" cy="343" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1222" y="313" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bar04" cx="-1274" cy="739" r="30" fill="#444444"></circle>
+                <circle class="border" id="bar04-border" cx="-1274" cy="739" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1304" y="709" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bar05" cx="-1560" cy="373" r="30" fill="#444444"></circle>
+                <circle class="border" id="bar05-border" cx="-1560" cy="373" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1590" y="343" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="bar06" cx="-1460" cy="709" r="30" fill="#444444"></circle>
+                <circle class="border" id="bar06-border" cx="-1460" cy="709" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1490" y="679" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+            
+                <!-- WARRIOR -->
+                <circle class="nodes info" id="war01" cx="-379" cy="379" r="20" fill="#444444"></circle>
+                <circle class="border" id="war01-border" cx="-379" cy="379" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-399" y="359" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="war02" cx="-469" cy="466" r="20" fill="#444444"></circle>
+                <circle class="border" id="war02-border" cx="-469" cy="466" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-489" y="446" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="war03" cx="-581" cy="581" r="30" fill="#444444"></circle>
+                <circle class="border" id="war03-border" cx="-581" cy="581" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-611" y="551" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="war04" cx="-696" cy="693" r="20" fill="#444444"></circle>
+                <circle class="border" id="war04-border" cx="-696" cy="693" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-716" y="673" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="war05" cx="-796" cy="794" r="20" fill="#444444"></circle>
+                <circle class="border" id="war05-border" cx="-796" cy="794" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-816" y="774" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+    
+                <circle class="nodes info" id="war06" cx="-900" cy="898" r="30" fill="#444444"></circle>
+                <circle class="border" id="war06-border" cx="-900" cy="898" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-930" y="868" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="war07" cx="-1021" cy="1019" r="20" fill="#444444"></circle>
+                <circle class="border" id="war07-border" cx="-1021" cy="1019" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1041" y="999" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="war08" cx="-1123" cy="1119" r="30" fill="#444444"></circle>
+                <circle class="border" id="war08-border" cx="-1123" cy="1119" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1153" y="1089" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="war09" cx="-1270" cy="1268" r="30" fill="#444444"></circle>
+                <circle class="border" id="war09-border" cx="-1270" cy="1268" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1300" y="1238" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="war10" cx="-474" cy="685" r="30" fill="#444444"></circle>
+                <circle class="border" id="war10-border" cx="-474" cy="685" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-504" y="655" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="war11" cx="-700" cy="469" r="30" fill="#444444"></circle>
+                <circle class="border" id="war11-border" cx="-700" cy="469" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-730" y="439" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+        
+                <circle class="nodes info" id="war12" cx="-795" cy="1009" r="30" fill="#444444"></circle>
+                <circle class="border" id="war12-border" cx="-795" cy="1009" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-825" y="979" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="war13" cx="-1253" cy="964" r="30" fill="#444444"></circle>
+                <circle class="border" id="war13-border" cx="-1253" cy="964" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1283" y="934" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="war14" cx="-1010" cy="784" r="30" fill="#444444"></circle>
+                <circle class="border" id="war14-border" cx="-1010" cy="784" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1040" y="754" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="war15" cx="-988" cy="1239" r="30" fill="#444444"></circle>
+                <circle class="border" id="war15-border" cx="-988" cy="1239" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-1018" y="1209" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- CHAMPION -->
+                <circle class="nodes info" id="cha01" cx="-458" cy="1004" r="30" fill="#444444"></circle>
+                <circle class="border" id="cha01-border" cx="-458" cy="1004" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-488" y="974" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cha02" cx="-461" cy="1233" r="30" fill="#444444"></circle>
+                <circle class="border" id="cha02-border" cx="-461" cy="1233" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-491" y="1203" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cha03" cx="-407" cy="1463" r="30" fill="#444444"></circle>
+                <circle class="border" id="cha03-border" cx="-407" cy="1463" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-437" y="1433" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cha04" cx="-679" cy="1157" r="30" fill="#444444"></circle>
+                <circle class="border" id="cha04-border" cx="-679" cy="1157" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-709" y="1127" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cha05" cx="-839" cy="1388" r="30" fill="#444444"></circle>
+                <circle class="border" id="cha05-border" cx="-839" cy="1388" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-869" y="1358" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cha06" cx="-601" cy="1553" r="30" fill="#444444"></circle>
+                <circle class="border" id="cha06-border" cx="-601" cy="1553" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-631" y="1523" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cha07" cx="-597" cy="1339" r="20" fill="#444444"></circle>
+                <circle class="border" id="cha07-border" cx="-597" cy="1339" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-617" y="1319" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+            
+                <!-- KNIGHT -->
+                <circle class="nodes info" id="kni01" cx="2" cy="524" r="20" fill="#444444"></circle>
+                <circle class="border" id="kni01-border" cx="2" cy="524" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-18" y="504" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="kni02" cx="-4" cy="649" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni02-border" cx="-4" cy="649" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-34" y="619" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni03" cx="-1" cy="783" r="20" fill="#444444"></circle>
+                <circle class="border" id="kni03-border" cx="-1" cy="783" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-21" y="763" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni04" cx="-1" cy="932" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni04-border" cx="-1" cy="932" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-31" y="902" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni05" cx="0" cy="1072" r="20" fill="#444444"></circle>
+                <circle class="border" id="kni05-border" cx="0" cy="1072" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-20" y="1052" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="kni06" cx="-1" cy="1226" r="20" fill="#444444"></circle>
+                <circle class="border" id="kni06-border" cx="-1" cy="1226" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-21" y="1206" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+                    
+                <circle class="nodes info" id="kni07" cx="-169" cy="1383" r="20" fill="#444444"></circle>
+                <circle class="border" id="kni07-border" cx="-169" cy="1383" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-189" y="1363" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni08" cx="154" cy="1383" r="20" fill="#444444"></circle>
+                <circle class="border" id="kni08-border" cx="154" cy="1383" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="134" y="1363" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni09" cx="0" cy="1383" r="20" fill="#444444"></circle>
+                <circle class="border" id="kni09-border" cx="0" cy="1383" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-20" y="1363" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni10" cx="-1" cy="1537" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni10-border" cx="-1" cy="1537" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-31" y="1507" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni11" cx="-3" cy="1684" r="20" fill="#444444"></circle>
+                <circle class="border" id="kni11-border" cx="-3" cy="1684" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-23" y="1664" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni12" cx="-1" cy="1867" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni12-border" cx="-1" cy="1867" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-31" y="1837" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni13" cx="-158" cy="787" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni13-border" cx="-158" cy="787" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-188" y="757" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni14" cx="142" cy="783" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni14-border" cx="142" cy="783" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="112" y="753" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni15" cx="174" cy="1075" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni15-border" cx="174" cy="1075" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="144" y="1045" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="kni16" cx="-202" cy="1075" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni16-border" cx="-202" cy="1075" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-232" y="1045" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="kni17" cx="-192" cy="1676" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni17-border" cx="-192" cy="1676" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="-222" y="1646" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="kni18" cx="190" cy="1662" r="30" fill="#444444"></circle>
+                <circle class="border" id="kni18-border" cx="190" cy="1662" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="160" y="1632" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- TEMPLAR -->
+                <circle class="nodes info" id="tem01" cx="504" cy="1177" r="30" fill="#444444"></circle>
+                <circle class="border" id="tem01-border" cx="504" cy="1177" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="474" y="1147" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="tem02" cx="344" cy="961" r="30" fill="#444444"></circle>
+                <circle class="border" id="tem02-border" cx="344" cy="961" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="314" y="931" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="tem03" cx="342" cy="1289" r="30" fill="#444444"></circle>
+                <circle class="border" id="tem03-border" cx="342" cy="1289" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="312" y="1259" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="tem04" cx="720" cy="1227" r="30" fill="#444444"></circle>
+                <circle class="border" id="tem04-border" cx="720" cy="1227" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="690" y="1197" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="tem05" cx="506" cy="1525" r="30" fill="#444444"></circle>
+                <circle class="border" id="tem05-border" cx="506" cy="1525" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="476" y="1495" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="tem06" cx="698" cy="1473" r="30" fill="#444444"></circle>
+                <circle class="border" id="tem06-border" cx="698" cy="1473" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="668" y="1443" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="tem07" cx="512" cy="1369" r="20" fill="#444444"></circle>
+                <circle class="border" id="tem07-border" cx="512" cy="1369" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="492" y="1349" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+
+                <!-- CLERIC -->
+                <circle class="nodes info" id="cle01" cx="361" cy="359" r="20" fill="#444444"></circle>
+                <circle class="border" id="cle01-border" cx="361" cy="359" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="341" y="339" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle02" cx="520" cy="379" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle02-border" cx="520" cy="379" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="490" y="349" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="cle03" cx="558" cy="555" r="20" fill="#444444"></circle>
+                <circle class="border" id="cle03-border" cx="558" cy="555" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="538" y="535" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle04" cx="656" cy="654" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle04-border" cx="656" cy="654" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="626" y="624" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="cle05" cx="762" cy="758" r="20" fill="#444444"></circle>
+                <circle class="border" id="cle05-border" cx="762" cy="758" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="742" y="738" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="cle06" cx="378" cy="532" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle06-border" cx="378" cy="532" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="348" y="502" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="" cx="868" cy="871" r="" fill="#444444"></circle>
+                <circle class="border" id="-border" cx="868" cy="871" r="" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="868" y="871" height="0" width="0" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle07" cx="847" cy="847" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle07-border" cx="847" cy="847" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="817" y="817" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle08" cx="936" cy="936" r="20" fill="#444444"></circle>
+                <circle class="border" id="cle08-border" cx="936" cy="936" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="916" y="916" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle09" cx="1036" cy="1034" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle09-border" cx="1036" cy="1034" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1006" y="1004" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="cle10" cx="1145" cy="1142" r="20" fill="#444444"></circle>
+                <circle class="border" id="cle10-border" cx="1145" cy="1142" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1125" y="1122" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle11" cx="1314" cy="1313" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle11-border" cx="1314" cy="1313" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1284" y="1283" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle12" cx="940" cy="731" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle12-border" cx="940" cy="731" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="910" y="701" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="cle13" cx="741" cy="545" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle13-border" cx="741" cy="545" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="711" y="515" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle14" cx="711" cy="964" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle14-border" cx="711" cy="964" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="681" y="934" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="cle15" cx="543" cy="760" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle15-border" cx="543" cy="760" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="513" y="730" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle16" cx="940" cy="1179" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle16-border" cx="940" cy="1179" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="910" y="1149" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle17" cx="1146" cy="1299" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle17-border" cx="1146" cy="1299" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1116" y="1269" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="cle18" cx="1294" cy="1142" r="30" fill="#444444"></circle>
+                <circle class="border" id="cle18-border" cx="1294" cy="1142" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1264" y="1112" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+            
+                <!-- BATTLEMAGE -->
+                <circle class="nodes info" id="bat01" cx="1166" cy="447" r="30" fill="#444444"></circle>
+                <circle class="border" id="bat01-border" cx="1166" cy="447" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1136" y="417" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bat02" cx="973" cy="464" r="30" fill="#444444"></circle>
+                <circle class="border" id="bat02-border" cx="973" cy="464" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="943" y="434" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bat03" cx="1060" cy="332" r="30" fill="#444444"></circle>
+                <circle class="border" id="bat03-border" cx="1060" cy="332" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1030" y="302" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bat04" cx="1309" cy="601" r="30" fill="#444444"></circle>
+                <circle class="border" id="bat04-border" cx="1309" cy="601" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1279" y="571" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bat05" cx="1369" cy="419" r="30" fill="#444444"></circle>
+                <circle class="border" id="bat05-border" cx="1369" cy="419" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1339" y="389" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+
+                <circle class="nodes info" id="bat06" cx="1570" cy="462" r="30" fill="#444444"></circle>
+                <circle class="border" id="bat06-border" cx="1570" cy="462" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1540" y="432" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+                
+                <circle class="nodes info" id="bat07" cx="1613" cy="682" r="30" fill="#444444"></circle>
+                <circle class="border" id="bat07-border" cx="1613" cy="682" r="33" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1583" y="652" height="60" width="60" href="img/shade.png" pointer-events="none"></image>
+            
+                <circle class="nodes info" id="bat08" cx="1258" cy="486" r="20" fill="#444444"></circle>
+                <circle class="border" id="bat08-border" cx="1258" cy="486" r="23" stroke="#ffee9900" stroke-width="6" fill="none" pointer-events="none"></circle>
+                <image x="1238" y="466" height="40" width="40" href="img/shade.png" pointer-events="none"></image>
+
+                
+            </g>
+
+        </g>
+    </svg>
+
+    <!-- the info box on mouseover -->
+    <div id="nodeInfo" ></div>
+
+    <!-- multiple choice box for certain nodes -->
+    <div id="selections-layer">
+        <div id="selections-container">
+
+            <div>Choose one:</div>
+            <select id="selections-list">
+                
+            </select>
+            <div class="ui-button" data-node="" id="selections-select">Select</div>
+        </div>
+    </div>
+
+    <!-- search box -->
+    <div id="search-container">
+        <div class="col1">search:</div><input class="col2" id="searchbox" type="text"><div class="col3" id="clearsearch">X</div>
+    </div>
+
+    <!-- wrapper for the ui boxes -->
+    <div id="ui-container">
+
+        <!-- message space -->
+        <div class="message-box" id="message">asdf</div>
+
+        <!-- the user interface in the bottom right -->
+        <div id="ui">
+
+            <!-- logged out state: user can login or register -->
+            <div id="loggedout">
+
+                <div class="ui-row-2">
+                    <div class="col1">name:</div><input class="col2 credentials" id="username" type="text" placeholder="a-zA-Z0-9_">
+                    <div class="col1">pwd:</div><input class="col2 credentials" id="password" type="text" placeholder="a-zA-Z0-9_">
+                </div>
+
+                <div class="loggedout-buttons">
+                    <div class="ui-button" id="login">Login</div> <div class="ui-button" id="register">Register</div>
+                </div>
+            </div>
+
+            <!--  logged in state: allows control and saving of builds -->
+            <div id="loggedin">
+
+                <div class="ui-row-3">
+                    <div class="col1">user:</div><div class="col2" id="name">asdf</div><img class="col3" id="logout" src="img/power_green.png"></img>
+                </div>
+
+                <div class="ui-row-3">
+                    <div class="col1">points:</div><div class="col2" id="buildpoints">114</div><div></div>
+
+                    <div class="col1">build:</div>
+                    <select class="col2" id="builds">
+                        <option value="newbuild" id="newbuild">New build?</option>
+                    </select>
+                    <input class="col2" id="buildname" type="text" placeholder="a-zA-Z0-9_">
+                    <img class="col3" id="link" src="img/link.png"></img>
+                </div>
+
+                <div class="loggedin-buttons">
+                    <div class="ui-button" id="clear-build">Clear</div><div class="ui-button" id="load-build">Load</div><div class="ui-button" id="save-build">Save</div><div class="ui-button" id="delete-build">Delete</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,2982 @@
+{
+    "bar01": {
+	"id": "bar01",
+        "color": 10,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ber05",
+            "bar06",
+            "bar05",
+            "bar03",
+            "bar02",
+            "bar04",
+            "war14"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Bloodlust:</span><p>You gain life leach that scales with the number of nearby enemies.</p>"
+    },
+    "bar02": {
+	"id": "bar02",
+        "color": 10,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bar01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Shockwave:</span><p>Trigger a shockwave when you overpower an enemy, knocking back nearby enemies and applying impact. Scales with strength.</p>"
+    },
+    "bar03": {
+	"id": "bar03",
+        "color": 10,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bar01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Jump Attack:</span><p>Strike the ground from the air with such force that nearby enemies are damaged and knocked back slightly. Radius scales with weapon size.</p>"
+    },
+    "bar04": {
+	"id": "bar04",
+        "color": 10,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bar01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Whirlwind:</span><p>Repeatedly attack in an aoe around you with reduced movespeed. This consumes moderate stamina per tick.</p>"
+    },
+    "bar05": {
+	"id": "bar05",
+        "color": 10,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bar01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Brute Boot:</span><p>Kick an enemy back and down, has a 1 second cast time. Effectiveness scales with enemy size.</p>"
+    },
+    "bar06": {
+	"id": "bar06",
+        "color": 10,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bar01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Weapon Throw:</span><p>You can now throw your melee weapon at enemies and it returns. Stamina cost of throwing is a ratio of weapon size and strength. Mana cost of returning is a ratio of weapon size and spirit. Throw animation and missile speed scales with weapon size and dexterity.</p>"
+    },
+    "bat01": {
+	"id": "bat01",
+        "color": 16,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bat08",
+            "bat02",
+            "bat03"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Disciple:</span><p>Years spent reciting scripture/formulae gives you resistance to interruption from damage while casting. Damage threshold scales with endurance.</p>"
+    },
+    "bat02": {
+	"id": "bat02",
+        "color": 16,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bat01"
+        ],
+        "selections": ["Fire", "Ice", "Lightning"],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Imbue Armor, Elemental:</span><p>Choose an element to bolster your armor with. Deals damage on hit, block, and bash. Each element has bonus effects similar to their respective spells.</p>"
+    },
+    "bat03": {
+	"id": "bat03",
+        "color": 16,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bat01"
+        ],
+        "selections": ["Fire", "Ice", "Lightning"],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Imbue Weapon, Elemental:</span><p>Choose an element to empower your weapon(s) with. Deals damage on attack, and has bonus effects similar to their respective spells.</p>"
+    },
+    "bat04": {
+	"id": "bat04",
+        "color": 16,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bat08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Arcane Pulse:</span><p>Modifies your shockwave to add your imbue damage type, and any related bonus effects.</p>"
+    },
+    "bat05": {
+	"id": "bat05",
+        "color": 16,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bat08"
+        ],
+        "selections": ["Fire", "Ice", "Lightning"],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Blink Mod, Elemental Impact:</span><p>Choose an element, pressing block during blink now surrounds you with that element and deals aoe damage on collision, as well as related bonus effects. (lightning pierces instead)</p>"
+    },
+    "bat06": {
+	"id": "bat06",
+        "color": 16,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "bat08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spellblade:</span><p>Amplify your current imbue, converting a % of non-imbue attack damage to that damage type, % converted and mana cost per attack scales with intelligence.</p>"
+    },
+    "bat07": {
+	"id": "bat07",
+        "color": 16,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "bat08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Blade Barrier, Aura:</span><p>Blades of arcane energy spin around you, damaging nearby enemies. Drains mana moderately.</p>"
+    },
+    "bat08": {
+	"id": "bat08",
+        "color": 16,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "cle08",
+            "wiz15",
+            "bat01",
+            "bat05",
+            "bat04",
+            "bat06",
+            "bat07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "bea01": {
+	"id": "bea01",
+        "color": 4,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru08",
+            "bea03",
+            "bea04",
+            "bea05",
+            "bea07",
+            "bea06",
+            "bea02",
+            "ran16"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Camouflage:</span><p>Your experience in the wilds now allows you to hide near trees/shrubs like you would in a bush. The radius is based on the plant size.</p>"
+    },
+    "bea02": {
+	"id": "bea02",
+        "color": 4,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bea01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Wild Empath:</span><p>You feel a kinship with the wild denizens, and they with you. Significantly reduces both in combat agro gains and out of combat agro radius from any plant/insect/beast/vukah.</p>"
+    },
+    "bea03": {
+	"id": "bea03",
+        "color": 4,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bea01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Predator:</span><p>Summon a wolf/boar/cat that will fight for you.</p>"
+    },
+    "bea04": {
+	"id": "bea04",
+        "color": 4,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bea01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Warrior:</span><p>Summon a vukah warrior that will protect you, prioritizing enemies by proximity and/or aggression towards you.</p>"
+    },
+    "bea05": {
+	"id": "bea05",
+        "color": 4,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bea01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Healer:</span><p>Summon a vukah shaman that will heal allied units.</p>"
+    },
+    "bea06": {
+	"id": "bea06",
+        "color": 4,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bea01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Trap, Poison Mine:</span><p>Plant a mushroom mine that will deal poison damage in an area and slow enemies when tripped.</p>"
+    },
+    "bea07": {
+	"id": "bea07",
+        "color": 4,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "bea01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Pack Leader, Aura:</span><p>Inspire nearby allies giving them a bonus to move, attack, and cast speed.</p>"
+    },
+    "ber00": {
+	"id": "ber00",
+        "color": 9,
+        "points": 1,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ber01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Berserker:</span><p>The unrelenting aggressor, the berserker values only speed and strength. Prefers to dual-wield one-handed weapons. Increases offense through a heightened mental and physical state.</p>Primary attribute: Strength"
+    },
+    "ber01": {
+	"id": "ber01",
+        "color": 9,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ber00",
+            "ber02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "ber02": {
+	"id": "ber02",
+        "color": 9,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [
+            "ber01",
+            "ber03"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">A Balanced Weapon:</span><p>You prefer the feel of one-handed weapons. Your damage with them is increased by an additional %10.</p>"
+    },
+    "ber03": {
+	"id": "ber03",
+        "color": 9,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ber02",
+            "ber04",
+            "ber11"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "ber04": {
+	"id": "ber04",
+        "color": 9,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ber03",
+            "ber05",
+            "ber10"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "ber05": {
+	"id": "ber05",
+        "color": 9,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ber04",
+            "ber06",
+            "ber12",
+            "bar01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">A Balanced Body:</span><p>Swinging many combinations of weapons has become second nature. Gain an additional %15 bonus to one-handed damage.</p>"
+    },
+    "ber06": {
+	"id": "ber06",
+        "color": 9,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ber05",
+            "ber07",
+            "ber13",
+            "bla01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "ber07": {
+	"id": "ber07",
+        "color": 9,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ber06",
+            "ber08",
+            "ber14"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "ber08": {
+	"id": "ber08",
+        "color": 9,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "ber07",
+            "ber09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">DW Bonus, Speed:</span><p>Increases your attack speed with one-handed weapons. Scales with strength.</p>"
+    },
+    "ber09": {
+	"id": "ber09",
+        "color": 9,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "ber08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Berserk:</span><p>Consume all rage stacks to attack repeatedly in frontal cone with a massive bonus to attack speed. Duration and stamina cost based on stacks consumed.</p>"
+    },
+    "ber10": {
+	"id": "ber10",
+        "color": 9,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ber04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Imbue Weapon, Blood Ritual:</span><p>Through an ancient pagan pact, your attacks now deal a % of damage as a bleed over 3 seconds. This imbue costs health instead of mana.</p>"
+    },
+    "ber11": {
+	"id": "ber11",
+        "color": 9,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ber03"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Rage:</span><p>Gain a stacking buff to damage, stamina and health regeneration; and a debuff to crit chance and armor value. </p>"
+    },
+    "ber12": {
+	"id": "ber12",
+        "color": 9,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ber05"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Tackle Mod, Unstoppable:</span><p>Consume a rage stack to break free from crowd control effects, or if struck with crowd control while tackling. </p>"
+    },
+    "ber13": {
+	"id": "ber13",
+        "color": 9,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ber06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">The Best Defense:</span><p>Attacking into a parry window parries the attack. Consumes one rage stack. </p>"
+    },
+    "ber14": {
+	"id": "ber14",
+        "color": 9,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ber07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Lunatic:</span><p>Gain a bonus to movespeed that scales with rage stacks. This is doubled while jumping. </p>"
+    },
+    "bla01": {
+	"id": "bla01",
+        "color": 8,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "rog15",
+            "ber06",
+            "bla03",
+            "bla02",
+            "bla05",
+            "bla04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Riposte:</span><p>After a successful parry your next attack within 2 seconds deals increased damage and applies moderate impact. Riposte cannot be blocked.</p>"
+    },
+    "bla02": {
+	"id": "bla02",
+        "color": 8,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bla01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Reflexes:</span><p>Widens the parry window while dual wielding.</p>"
+    },
+    "bla03": {
+	"id": "bla03",
+        "color": 8,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bla01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">DW Bonus, Defense:</span><p>Reduces the penalties of blocking while dual-wielding. Scales with strength.</p>"
+    },
+    "bla04": {
+	"id": "bla04",
+        "color": 8,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bla01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Feint:</span><p>Your blocked attacks were actually intentional, exposing your oppenents weaknesses. You gain riposte.</p>"
+    },
+    "bla05": {
+	"id": "bla05",
+        "color": 8,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "bla01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Battlemaster:</span><p>Your experience with weapons and armor is such that you bypass enemy armor and reduce durability damage by %5 per point invested.</p>"
+    },
+    "cha01": {
+	"id": "cha01",
+        "color": 12,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cha07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Anticipation:</span><p>Widens the parry window with a two-handed weapon.</p>"
+    },
+    "cha02": {
+	"id": "cha02",
+        "color": 12,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cha07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">2H Bonus, Defense:</span><p>Reduces the penalties of blocking with a two-handed weapon. Scales with strength.</p>"
+    },
+    "cha03": {
+	"id": "cha03",
+        "color": 12,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cha07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Shaft:</span><p>Who's the cat that can now shield bash with a two-handed weapon?.</p>"
+    },
+    "cha04": {
+	"id": "cha04",
+        "color": 12,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cha07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Low Blow:</span><p>Perform a spinning sweep attack to the legs that slows enemies, knocks down on crit (stun). Arc scales with weapon size.</p>"
+    },
+    "cha05": {
+	"id": "cha05",
+        "color": 12,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cha07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Battle Cry:</span><p>Let loose an intimidating shout, interrupting and fearing nearby enemies (aoe mini stun), generates moderate agro.</p>"
+    },
+    "cha06": {
+	"id": "cha06",
+        "color": 12,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cha07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Gladiator:</span><p>Defeating enemies grants  stacks of \"entertained\" buff, granting you and your allies stamina regeneration. Number of stacks scales with enemy size and level difference.</p>"
+    },
+    "cha07": {
+	"id": "cha07",
+        "color": 12,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni07",
+            "war07",
+            "cha04",
+            "cha01",
+            "cha02",
+            "cha05",
+            "cha06",
+            "cha03"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "cle00": {
+	"id": "cle00",
+        "color": 15,
+        "points": 1,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "cle01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Cleric:</span><p>A believer in a higher purpose, the cleric can channel the divine saving allies and smiting foes. Wields a staff or wand similar to a magic user.</p>Primary attribute: Spirit"
+    },
+    "cle01": {
+	"id": "cle01",
+        "color": 15,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "cle00",
+            "cle03",
+            "cle06",
+            "cle02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "cle02": {
+	"id": "cle02",
+        "color": 15,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cle01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Chain Holy Power:</span><p>Target an ally to heal them and yourself, chaining to up to 2 additional nearby allies.</br>Targeting an enemy will do the same but cause holy damage to them.</p>"
+    },
+    "cle03": {
+	"id": "cle03",
+        "color": 15,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "cle01",
+            "cle04",
+            "cle15",
+            "cle13"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "cle04": {
+	"id": "cle04",
+        "color": 15,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [
+            "cle03",
+            "cle05"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Clergy:</span><p>Your regular attendance gives you an additional %10 to divine damage.</p>"
+    },
+    "cle05": {
+	"id": "cle05",
+        "color": 15,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "cle04",
+            "cle07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "cle06": {
+	"id": "cle06",
+        "color": 15,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cle01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Light Burst:</span><p>Emit a nova of holy force, knocking back enemies and damaging them.</p>"
+    },
+    "cle07": {
+	"id": "cle07",
+        "color": 15,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cle05",
+            "cle08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Bloodletting:</span><p>Your magic damage has a chance to produce a random resource orb. The chance and number of orbs generated scale with damage dealt.</p>"
+    },
+    "cle08": {
+	"id": "cle08",
+        "color": 15,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "tem07",
+            "cle07",
+            "cle09",
+            "bat08",
+            "cle16",
+            "cle14",
+            "cle12"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "cle09": {
+	"id": "cle09",
+        "color": 15,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cle08",
+            "cle10",
+            "cle18"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Judgement:</span><p>Channel divine ire, gaining an additional %15 bonus to divine damage.</p>"
+    },
+    "cle10": {
+	"id": "cle10",
+        "color": 15,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "cle09",
+            "cle11"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "cle11": {
+	"id": "cle11",
+        "color": 15,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "cle10"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Eternal Flame:</span><p>You have been chosen as the conduit of the eternal flames justice. Convert %50 of your bonus healing to bonus divine damage.</p>"
+    },
+    "cle12": {
+	"id": "cle12",
+        "color": 15,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "cle13",
+            "cle08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Guiding Light:</span><p>You can now cast light burst on allies. The radius is increased by %10 and the cast range by 3 meters, per point invested.</p>"
+    },
+    "cle13": {
+	"id": "cle13",
+        "color": 15,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cle03",
+            "cle12"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Faith:</span><p>Restore an allies faith upon healing them, granting them % damage reduction for 2 seconds. The percentage scales with the allies missing health.</p>"
+    },
+    "cle14": {
+	"id": "cle14",
+        "color": 15,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "cle15",
+            "cle08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Blink Mod, Grace:</span><p>Your blink adds a small sphere of protection for the duration.</p>"
+    },
+    "cle15": {
+	"id": "cle15",
+        "color": 15,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "cle03",
+            "cle14"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Hope:</span><p>Your allies carry a spark of hope with you around. Your resurrection speed is increased by %10 and the distance at which you can resurrect is increased by 3 meters, per point invested.</p>"
+    },
+    "cle16": {
+	"id": "cle16",
+        "color": 15,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "cle17",
+            "cle08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Imbue Weapon, Heal Channel:</span><p>You convert your wand(s) to instead fire healing missiles. Benefits from wand nodes.</p>"
+    },
+    "cle17": {
+	"id": "cle17",
+        "color": 15,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "cle16"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Holy Aura:</span><p>A golden glow heals nearby allies every second.</p>"
+    },
+    "cle18": {
+	"id": "cle18",
+        "color": 15,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "cle09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Smite:</span><p>A slow casting, powerful spell that strikes multiple enemies with holy damage and blinds them for 3 seconds.</p>"
+    },
+    "dru00": {
+	"id": "dru00",
+        "color": 3,
+        "points": 1,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "dru01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Druid:</span><p>A sort of rogue priest or monk who worships in the green temple of the wilds, far removed from the \"civilized\" world. A druid typically carries a staff but can also fight bare-handed, and can command wild forces to fight for them.</p>Primary attribute: Spirit"
+    },
+    "dru01": {
+	"id": "dru01",
+        "color": 3,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "dru00",
+            "dru05"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "dru02": {
+	"id": "dru02",
+        "color": 3,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "dru05",
+            "dru06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "dru03": {
+	"id": "dru03",
+        "color": 3,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru05"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Green Wyvern's Breath:</span><p>Spray acid in a cone at enemies in front of you, damaging them every second for 6 seconds.</p>"
+    },
+    "dru04": {
+	"id": "dru04",
+        "color": 3,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru05"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Channel Lightning:</span><p>Channel a storm around you electrocuting nearby enemies every second. Wind and rain spin around you slowing enemies also.</p>"
+    },
+    "dru05": {
+	"id": "dru05",
+        "color": 3,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [
+            "dru01",
+            "dru02",
+            "dru03",
+            "dru04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Wild Force:</span><p>Your nature damage is increased by an additional %10.</p>"
+    },
+    "dru06": {
+	"id": "dru06",
+        "color": 3,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "dru02",
+            "dru07",
+            "dru11",
+            "dru12",
+            "dru13",
+            "dru10"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "dru07": {
+	"id": "dru07",
+        "color": 3,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "dru06",
+            "dru09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "dru08": {
+	"id": "dru08",
+        "color": 3,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "nec01",
+            "dru09",
+            "dru19",
+            "bea01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spirit:</span><p>Increases your spirit attribute by 1.</br>Spirit increases healing done by %5, max mana by 20, and mana regen by 0.5/sec, per attribute point.</p>"
+    },
+    "dru09": {
+	"id": "dru09",
+        "color": 3,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru07",
+            "dru08",
+            "dru14",
+            "dru15",
+            "dru18",
+            "dru16"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Nature's Wrath:</span><p>Your nature damage is increased by an additional %15.</p>"
+    },
+    "dru10": {
+	"id": "dru10",
+        "color": 3,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Spitter:</span><p>Summon a stationary plant that spits poison at nearby enemies.</p>"
+    },
+    "dru11": {
+	"id": "dru11",
+        "color": 3,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Insect Swarm:</span><p>Summon a swarm of insects which surround a target dealing piercing damage over time and reducing their accuracy. Will chain to the nearest target on kill, and can be directed.</p>"
+    },
+    "dru12": {
+	"id": "dru12",
+        "color": 3,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Will o' Wisp:</span><p>Summon a blackmire will o' wisp that will shoot enemies and split if attacked.</p>"
+    },
+    "dru13": {
+	"id": "dru13",
+        "color": 3,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Snakes:</span><p>Throw twigs at a location, turning them into a zone of vipers that will deal poison damage over time to enemies within it.</p>"
+    },
+    "dru14": {
+	"id": "dru14",
+        "color": 3,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Undergrowth:</span><p>Create a bush at a location that slows enemies and allows hiding/camouflage.</p>"
+    },
+    "dru15": {
+	"id": "dru15",
+        "color": 3,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "dru09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Blink Mod, Trees Breeze:</span><p>Your blink is now leaves in the wind, confusing enemies.You are considered camouflaged for the duration. Can drop Undergrowth.</p>"
+    },
+    "dru16": {
+	"id": "dru16",
+        "color": 3,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "dru09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Barkskin:</span><p>You gain resistance to bleed and poison damage, and an armor bonus that scales inversely with armor weight. Increases unarmed attack damage and block value.</p>"
+    },
+    "dru18": {
+	"id": "dru18",
+        "color": 3,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "dru09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Forest Monk:</span><p>Through martial training in the wilds, you can now fight bare-handed or with a staff. These styles are considered dual-wield and two-handed respectively. Now benefits from bonus nature damage.</p>"
+    },
+    "dru19": {
+	"id": "dru19",
+        "color": 3,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "dru08",
+            "dru20"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Fey Flow:</span><p>Your meditation has exposed your spirit to the fey dimension. Gain a bonus to health regeneration while camouflaged, and for 3 seconds afterwards. Anyone you heal gains this bonus for 3 seconds.</p>"
+    },
+    "dru20": {
+	"id": "dru20",
+        "color": 3,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "dru19"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Archdruid:</span><p>You have been chosen as a vessel of vengeance by the hidden \"one-soul\". Convert %50 of your bonus healing to bonus nature damage.</p>"
+    },
+    "kni00": {
+	"id": "kni00",
+        "color": 13,
+        "points": 1,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Knight:</span><p>A classically trained man-at-arms, the knight is indomitable. Specializing in one-handed weapons and the shield, they can protect themselves and others.</p>Primary attribute: Constitution"
+    },
+    "kni01": {
+	"id": "kni01",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni00",
+            "kni02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "kni02": {
+	"id": "kni02",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "kni01",
+            "kni03",
+            "kni13",
+            "kni14"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Retaliation:</span><p>Your blocks now reflect %5 of the damage back to the attacker per point invested.</p>"
+    },
+    "kni03": {
+	"id": "kni03",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni02",
+            "kni04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "kni04": {
+	"id": "kni04",
+        "color": 13,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [
+            "kni03",
+            "kni05",
+            "kni14",
+            "kni13",
+            "kni16",
+            "kni15"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Front Lines:</span><p>Your familiarity with shields and heavy armor increases your defensive damage by an additional %10.</p>"
+    },
+    "kni05": {
+	"id": "kni05",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni04",
+            "kni06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "kni06": {
+	"id": "kni06",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni05",
+            "kni09",
+            "kni07",
+            "kni08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "kni07": {
+	"id": "kni07",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "cha07",
+            "kni06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "kni08": {
+	"id": "kni08",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni06",
+            "tem07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "kni09": {
+	"id": "kni09",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni06",
+            "kni10"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "kni10": {
+	"id": "kni10",
+        "color": 13,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "kni09",
+            "kni11",
+            "kni17",
+            "kni18"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Iron Man:</span><p>A master of metal, your defensive damage is increased by an additional %15.</p>"
+    },
+    "kni11": {
+	"id": "kni11",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni10",
+            "kni12"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "kni12": {
+	"id": "kni12",
+        "color": 13,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "kni11"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Earth Aura:</span><p>All damage against nearby allies is reduced by %15.</p>"
+    },
+    "kni13": {
+	"id": "kni13",
+        "color": 13,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "kni02",
+            "kni04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Shield Bash:</span><p>Attacking while blocking will bash a target with your shield, damaging them and applying impact. If you have Weapon Throw, you can now throw your shield as well by pressing block during aim.</p>"
+    },
+    "kni14": {
+	"id": "kni14",
+        "color": 13,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "kni02",
+            "kni04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Shield Mastery:</span><p>Your parry window with a shield is increased. The following bonuses scale with strength: the reduced stamina cost of blocking, and the impact that your blocks now apply.</p>"
+    },
+    "kni15": {
+	"id": "kni15",
+        "color": 13,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "kni04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Tactician:</span><p>Your mastery of the shield is such that your parries knock your opponent off balance, exposing their weaknesses, you gain riposte.</p>"
+    },
+    "kni16": {
+	"id": "kni16",
+        "color": 13,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "kni04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Tackle Mod, Shield Wall:</span><p>Pressing block during tackle will cause you to bash targets in a cone with your shield, knocking them down for a duration based on enemy size (stuns). This causes high agro.</p>"
+    },
+    "kni17": {
+	"id": "kni17",
+        "color": 13,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "kni10"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intimidating Presence:</span><p>You draw %10 increased agro and nearby allies draw %10 less, per point invested.</p>"
+    },
+    "kni18": {
+	"id": "kni18",
+        "color": 13,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "kni10"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Military Training:</span><p>Through prolonged, rigorous physical activity your stamina regeneration delay and the duration of crowd control effects is reduced. Scales with endurance.</p>"
+    },
+    "nec01": {
+	"id": "nec01",
+        "color": 2,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "wiz14",
+            "dru08",
+            "nec02",
+            "nec03",
+            "nec08",
+            "nec09",
+            "nec10",
+            "nec07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "nec02": {
+	"id": "nec02",
+        "color": 2,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "nec01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Imbue Weapon, Shadow:</span><p>Toggle to cause your attacks to deal added shadow/shroud damage.</br>Imbues cost mana per attack.</p>"
+    },
+    "nec03": {
+	"id": "nec03",
+        "color": 2,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "nec01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dark Pact, Aura:</span><p>Creates an aura of shadow around the caster increasing the effectiveness of sneaking. This also reduces enemy accuracy against an ally affected by the aura. The caster's healing is reduced by %80, and shadow/shroud damage now provides %20 life leach.</p>"
+    },
+    "nec04": {
+	"id": "nec04",
+        "color": 2,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "nec08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Shadow Bats:</span><p>Create a swarm of black bats with red eyes that behaves similarly to insect swarm and deal shadow/shroud damage. These bats benefit from dark pact regardless of distance including the healing/life leach effect. Number of bats scales with current health %.</p>"
+    },
+    "nec05": {
+	"id": "nec05",
+        "color": 2,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "nec08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Skulls:</span><p>Toggle to create floating skulls upon killing an enemy that spit bone channel skulls at enemies. Lasts 8 seconds and their size/stats scale with those of the enemy killed.</p>"
+    },
+    "nec06": {
+	"id": "nec06",
+        "color": 2,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "nec08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Summon Hallow Knight:</span><p>Create a tanky undead hallow that will prioritize enemies by their proximity and/or aggression towards the caster.</p>"
+    },
+    "nec07": {
+	"id": "nec07",
+        "color": 2,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "nec01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Bone Channel:</span><p>While channeling, fire a mini skull with green flames 1.5 seconds.</p>"
+    },
+    "nec08": {
+	"id": "nec08",
+        "color": 2,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "nec01",
+            "nec04",
+            "nec05",
+            "nec06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Sacrifice:</span><p>Consume an allied summon to receive a stacking bonus to health and mana regeneration for 3 seconds. The number of stacks scales with stats of the unit sacrificed.</p>"
+    },
+    "nec09": {
+	"id": "nec09",
+        "color": 2,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "nec01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Phylactery:</span><p>Create a miniature flame vessel in your inventory that can store the soul of an ally. Should they die, they are revived at your location and the phylactery is destroyed. Limit 1.</p>"
+    },
+    "nec10": {
+	"id": "nec10",
+        "color": 2,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "nec01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Forbidden Rites:</span><p>In your thirst for knowledge you have unearthed blasphemous texts. Your holy damage is converted to shadow/shroud, smite becomes shroud meteor.</p>"
+    },
+    "non01": {
+	"id": "non01",
+        "color": 17,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [],
+        "selections": ["Constitution", "Dexterity", "Endurance", "Intelligence", "Strength", "Spirit"],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Flameborn:</span><p>Choose a primary attribute. This will increase by 1 per flame level.</p>"
+    },
+    "non02": {
+	"id": "non02",
+        "color": 17,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Double Jump:</span><p>Allows jumping a second time while airborne.</p>"
+    },
+    "non03": {
+	"id": "non03",
+        "color": 17,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Metabolism:</span><p>Increases your out-of-combat health regeneration by 4, plus %50 per active food buff. This is prevented by starvation.</p>"
+    },
+    "non04": {
+	"id": "non04",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Well Rested:</span><p>Your rest bonus is increased by 5 minutes, plus %2.5 per additional point.</p>"
+    },
+    "non05": {
+	"id": "non05",
+        "color": 17,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Tool Box:</span><p>You take good care of your tools and they lose durability %50 slower.</p>"
+    },
+    "non06": {
+	"id": "non06",
+        "color": 17,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dessert Stomach:</span><p>You gain an additional food buff slot.</p>"
+    },
+    "non07": {
+	"id": "non07",
+        "color": 17,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Mason</span><p>The pickaxe does %30 more damage to terrain, stone, and metal.</p>"
+    },
+    "non08": {
+	"id": "non08",
+        "color": 17,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Lumberjack:</span><p>Felling axes do %30 more damage to wood and flora.</p>"
+    },
+    "non09": {
+	"id": "non09",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Inner Fire:</span><p>Increases your maximum shroud time by 1 minute per point.</p>"
+    },
+    "non10": {
+	"id": "non10",
+        "color": 17,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Shroud Purifier:</span><p>Each fell felled refunds an amount of shroud time scaling with enemy size.</p>"
+    },
+    "non11": {
+	"id": "non11",
+        "color": 17,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Feast:</span><p>Meat increases your max health by an additional %15.</p>"
+    },
+    "non12": {
+	"id": "non12",
+        "color": 17,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [],
+        "selections": ["Blink", "Dash", "Tackle"],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Improved Dodge:</span><p>Select a new dodge roll variant:</br><b>Tackle: </b>pushes enemies aside.</br><b>Dash: </b>narrows your hitbox, very fast.</br><b>Blink: </b>no collision, costs mana instead.</p>"
+    },
+    "non13": {
+	"id": "non13",
+        "color": 17,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Rebound:</span><p>Increases base stamina regeneration by up to %100, based on your missing stamina.</p>"
+    },
+    "non14": {
+	"id": "non14",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Endurance:</span><p>Increases your endurance attribute by 1. Endurance increases max stamina by 10.</p>"
+    },
+    "non15": {
+	"id": "non15",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Endurance:</span><p>Increases your endurance attribute by 1. Endurance increases max stamina by 10.</p>"
+    },
+    "non16": {
+	"id": "non16",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Endurance:</span><p>Increases your endurance attribute by 1. Endurance increases max stamina by 10.</p>"
+    },
+    "non17": {
+	"id": "non17",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Endurance:</span><p>Increases your endurance attribute by 1. Endurance increases max stamina by 10.</p>"
+    },
+    "non18": {
+	"id": "non18",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Endurance:</span><p>Increases your endurance attribute by 1. Endurance increases max stamina by 10.</p>"
+    },
+    "non19": {
+	"id": "non19",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Endurance:</span><p>Increases your endurance attribute by 1. Endurance increases max stamina by 10.</p>"
+    },
+    "non20": {
+	"id": "non20",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Endurance:</span><p>Increases your endurance attribute by 1. Endurance increases max stamina by 10.</p>"
+    },
+    "non21": {
+	"id": "non21",
+        "color": 17,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Endurance:</span><p>Increases your endurance attribute by 1. Endurance increases max stamina by 10.</p>"
+    },
+    "non22": {
+	"id": "non22",
+        "color": 17,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Feather Fall:</span><p>Holding aim while airborne will slow your fall speed dramatically, while allowing you to shoot or cast. Consumes mana over time.</p>"
+    },
+    "ran00": {
+	"id": "ran00",
+        "color": 5,
+        "points": 1,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ran01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Ranger:</span><p>A rogue hunter at home in the woods. They wield a bow and arrows, and are skilled at trapping and ambushing their prey.</p>Primary attribute: Dexterity"
+    },
+    "ran01": {
+	"id": "ran01",
+        "color": 5,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ran00",
+            "ran02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "ran02": {
+	"id": "ran02",
+        "color": 5,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [
+            "ran01",
+            "ran03",
+            "ran05",
+            "ran04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Good Form:</span><p>Increases your ranged damage by %10.</p>"
+    },
+    "ran03": {
+	"id": "ran03",
+        "color": 5,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ran02",
+            "ran06"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "ran04": {
+	"id": "ran04",
+        "color": 5,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ran02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Trap, Steel:</span><p>Arm a steel trap that roots enemies in a small area and applies a bleed for 3 seconds. Root duration scales with enemy size.</p>"
+    },
+    "ran05": {
+	"id": "ran05",
+        "color": 5,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ran02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Imbue Weapon, Poison:</span><p>Toggle to cause your attacks to deal added poison damage. </br>Imbues cost mana per attack.</p>"
+    },
+    "ran06": {
+	"id": "ran06",
+        "color": 5,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ran03",
+            "ran07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "ran07": {
+	"id": "ran07",
+        "color": 5,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ran06",
+            "ran08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "ran08": {
+	"id": "ran08",
+        "color": 5,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ran07",
+            "ran09",
+            "ran15",
+            "ran13"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Hunter:</span><p>Your experience hitting live targets has paid off, your ranged damage is increased by an additional %15.</p>"
+    },
+    "ran09": {
+	"id": "ran09",
+        "color": 5,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "ran08",
+            "ran10",
+            "ran16",
+            "ran18"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "ran10": {
+	"id": "ran10",
+        "color": 5,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "ran09",
+            "ran11",
+            "ran17",
+            "ran14"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Archer:</span><p>Increases your ranged attack and missile speed by %10 per point.</p>"
+    },
+    "ran11": {
+	"id": "ran11",
+        "color": 5,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "ran10",
+            "ran12"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Sniper:</span><p>While aiming, you can now hold down the attack button to both zoom in and gain %10 crit chance per second. Max bonuses at 3 seconds.</p>"
+    },
+    "ran12": {
+	"id": "ran12",
+        "color": 5,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "ran11"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Arcane Arrow:</span><p>Speak the elven word and fire a magic arrow at a target. This cannot miss, stuns, and is always a headshot. You must target the enemy to fire. Bonus damage is increased by nature damage.</p>"
+    },
+    "ran13": {
+	"id": "ran13",
+        "color": 5,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ran08",
+            "ran18"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dash Mod, Guerilla Tactics:</span><p>After dashing, gain a bonus to move and attack speed for 3 seconds.</br>Can drop traps.</p>"
+    },
+    "ran14": {
+	"id": "ran14",
+        "color": 5,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ran10",
+            "ran18"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Thrill of the Hunt:</span><p>Gain a bonus to stamina regeneration when a trap is tripped.</p>"
+    },
+    "ran15": {
+	"id": "ran15",
+        "color": 5,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "ran08",
+            "ran16"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Multi-Shot:</span><p>Your trigger finger is twitchy, gain a %7 chance per point to fire a second shot with a ranged attack.</p>"
+    },
+    "ran16": {
+	"id": "ran16",
+        "color": 5,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "bea01",
+            "ran09",
+            "ran15",
+            "ran17"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Predator:</span><p>You can now see the heat outline of hidden or obscured enemies. This does not allow targeting.</p>"
+    },
+    "ran17": {
+	"id": "ran17",
+        "color": 5,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ran10",
+            "ran16"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Wounded Prey:</span><p>Your targets effective headshot hitbox is increased inversely with its movespeed. Max bonus at stationary.</p>"
+    },
+    "ran18": {
+	"id": "ran18",
+        "color": 5,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "ran09",
+            "ran13",
+            "ran14",
+            "sab03"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Explosive Arrow:</span><p>Create arrows with an explosive mixture. Deals arrow damage to the primary target and explosive damage to all enemies in a radius, with a slight knockback. Firing has a 1.5 second cast time and a slower base missile speed.</p>"
+    },
+    "rog00": {
+	"id": "rog00",
+        "color": 7,
+        "points": 1,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "rog01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Rogue:</span><p>An expert in thievery, acrobatics, and assassination. The rogue uses the shadows to their advantage, whether literally or exploiting gaps in the opponents knowledge.</p>Primary attribute: Dexterity"
+    },
+    "rog01": {
+	"id": "rog01",
+        "color": 7,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "rog00",
+            "rog02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "rog02": {
+	"id": "rog02",
+        "color": 7,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [
+            "rog01",
+            "rog03",
+            "rog17"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Wrist Strength:</span><p>Increases your piercing damage by an additional %10.</p>"
+    },
+    "rog03": {
+	"id": "rog03",
+        "color": 7,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "rog02",
+            "rog04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "rog04": {
+	"id": "rog04",
+        "color": 7,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "rog03",
+            "rog05"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "rog05": {
+	"id": "rog05",
+        "color": 7,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "rog04",
+            "rog06",
+            "rog14",
+            "rog11"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Acrobat:</span><p>Your time spent vaulting and tumbling in the park or alleys has reduced the stamina cost of jump, sprint, and dodge/dash. Scales with dexterity.</p>"
+    },
+    "rog06": {
+	"id": "rog06",
+        "color": 7,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "rog05",
+            "rog07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "rog07": {
+	"id": "rog07",
+        "color": 7,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "rog06",
+            "rog08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dexterity:</span><p>Increases your dexterity attribute by 1 point.</br>Dexterity increases melee and ranged crit chance by %1 and crit damage by %5 per point.</p>"
+    },
+    "rog08": {
+	"id": "rog08",
+        "color": 7,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "rog07",
+            "rog09",
+            "rog15",
+            "rog12"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Anatomy:</span><p>Through questionable means you have gained a better understanding of vital points. You gain an additional %15 bonus to piercing damage.</p>"
+    },
+    "rog09": {
+	"id": "rog09",
+        "color": 7,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "rog08",
+            "rog10",
+            "rog16",
+            "rog13"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">DW Bonus, Accuracy:</span><p>A savant with a weapon in each hand, you gain double your dexterity bonuses while dual-wielding. </p>"
+    },
+    "rog10": {
+	"id": "rog10",
+        "color": 7,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "rog09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Backstab:</span><p>Attempt to kill your target, attacking vital points. Only usable against the back of an unaware target: stunned, blinded, or feared. Deals an additional %500 crit damage, and costs significant stamina. Causes high agro.</p>"
+    },
+    "rog11": {
+	"id": "rog11",
+        "color": 7,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "rog12",
+            "rog05"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Dash Mod, Shadow:</span><p>Become like a moving shadow confusing enemies, prevents enemy attack tracking and targeting during animation, player is considered hidden during animation. Can drop smoke bomb.</p>"
+    },
+    "rog12": {
+	"id": "rog12",
+        "color": 7,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "sab02",
+            "rog13",
+            "rog11",
+            "rog08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Hide in Shadows:</span><p>Your skill at avoiding detection is increased. The distance at which you can be seen now also scales with illumination.</p>"
+    },
+    "rog13": {
+	"id": "rog13",
+        "color": 7,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "rog09",
+            "rog12"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Move Silently:</span><p>Increases your movespeed while hidden/camouflaged by %10 per point invested.</p>"
+    },
+    "rog14": {
+	"id": "rog14",
+        "color": 7,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "rog05",
+            "rog15"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Premeditated Murder:</span><p>After dashing nearby enemies have their effective back radians increased by %50 for 1 second.</p>"
+    },
+    "rog15": {
+	"id": "rog15",
+        "color": 7,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "rog14",
+            "rog16",
+            "rog08",
+            "bla01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Blade Dance:</span><p>Attacking while dashing performs a spinning attack that hits all enemies in a line. This costs additional stamina and has reduced crit chance.</p>"
+    },
+    "rog16": {
+	"id": "rog16",
+        "color": 7,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "rog15",
+            "rog09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Assassin:</span><p>Your dash distance from hidden/camouflaged, out of combat, is increased by %20 per point invested. Holding the dodge button adds this bonus per 100ms.</p>"
+    },
+    "rog17": {
+	"id": "rog17",
+        "color": 7,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "rog02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Counterattack:</span><p>After dodging a melee attack gain riposte for 2 seconds, which deals increased damage and applies moderate impact. Riposte cannot be blocked.</p>"
+    },
+    "sab01": {
+	"id": "sab01",
+        "color": 6,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "sab02",
+            "sab03",
+            "sab04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Weapon Throw:</span><p>You can now throw your melee weapon at enemies and it returns. Stamina cost of throwing is a ratio of weapon size and strength. Mana cost of returning is a ratio of weapon size and spirit. Throw animation and missile speed scales with weapon size and dexterity.</p>"
+    },
+    "sab02": {
+	"id": "sab02",
+        "color": 6,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "sab03",
+            "rog12",
+            "sab01",
+            "sab05"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Smoke Bomb:</span><p>Create bombs with a mixture that reacts with the air when broken, creating a cloud of smoke that blinds and slows enemies for 3 seconds.</p>"
+    },
+    "sab03": {
+	"id": "sab03",
+        "color": 6,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "ran18",
+            "sab02",
+            "sab06",
+            "sab01",
+            "sab05",
+            "sab07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Trap, Explosive Mine:</span><p>Place and arm a mine that explodes 1 second after being tripped, damaging everything in a radius.</p>"
+    },
+    "sab04": {
+	"id": "sab04",
+        "color": 6,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "sab01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Big Trouble:</span><p>You can now parry a ranged attack, catching and returning it to the attacker.</p>"
+    },
+    "sab05": {
+	"id": "sab05",
+        "color": 6,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [
+            "sab02",
+            "sab03"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Mechanical Aptitude:</span><p>A natural tinkerer, you pick locks, disarm traps, and place traps faster. Scales with both dex and int.</p>"
+    },
+    "sab06": {
+	"id": "sab06",
+        "color": 6,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "sab03"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Quick Study:</span><p>Experimenting with explosives has taught you the hard way. Gain a %20 bonus to explosive damage and resistance.</p>"
+    },
+    "sab07": {
+	"id": "sab07",
+        "color": 6,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "sab03"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Rogue Alchemist:</span><p>Your experiments have unlocked one of the philosopher's secrets. You can now substitute your explosive damage with your imbue damage. This costs additional resources.</p>"
+    },
+    "tem01": {
+	"id": "tem01",
+        "color": 14,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "tem07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Imbue Weapon, Holy:</span><p>Envelopes your weapon in white flames, dealing bonus damage as holy.</p>"
+    },
+    "tem02": {
+	"id": "tem02",
+        "color": 14,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "tem07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Imbue Armor, Holy:</span><p>Empowers your armor with holy flames, dealing bonus holy damage on hit, block, and bash.</p>"
+    },
+    "tem03": {
+	"id": "tem03",
+        "color": 14,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "tem07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">RIghteous Fire:</span><p>Your holy damage marks enemies for 3 seconds. Allies attacking a marked target are healed for a percentage of damage dealt. This is not considered life leach.</p>"
+    },
+    "tem04": {
+	"id": "tem04",
+        "color": 14,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "tem07"
+        ],
+        "selections": ["Consecration", "Sphere of Protection", "Penance"],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Light Burst Mod:</span><p>Choose a light burst variant:</br>- consecration: now creates a ground aoe of holy flames instead for 6 seconds.</br>- sphere of protection: you can now hold the button to create a force field afterwards, you are immobilized and no attacks/spells/enemies can enter or exit the sphere. Drains mana moderately.</br>- penance: now deals increased damage and blinds enemies instead for 2 seconds.</p>"
+    },
+    "tem05": {
+	"id": "tem05",
+        "color": 14,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "tem07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Divine Favor:</span><p>Your blocks now restore mana.</p>"
+    },
+    "tem06": {
+	"id": "tem06",
+        "color": 14,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "tem07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Martyr:</span><p>Your tombstone/body now generates your aura.</p>"
+    },
+    "tem07": {
+	"id": "tem07",
+        "color": 14,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "kni08",
+            "cle08",
+            "tem03",
+            "tem02",
+            "tem01",
+            "tem04",
+            "tem06",
+            "tem05"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Constitution:</span><p>Increases your constitution attribute by 1 point.</br>Constitution increases your health by 50 points and health regeneration by 0.5 point per second.</p>"
+    },
+    "war00": {
+	"id": "war00",
+        "color": 11,
+        "points": 1,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "war01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Warrior:</span><p>The warrior is a formidable combatant, overpowering their enemies with a two-handed weapon and sheer strength, and defying attacks in equal measure.</p>Primary attribute: Strength"
+    },
+    "war01": {
+	"id": "war01",
+        "color": 11,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "war00",
+            "war02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "war02": {
+	"id": "war02",
+        "color": 11,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "war01",
+            "war03",
+            "war11",
+            "war10"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "war03": {
+	"id": "war03",
+        "color": 11,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [
+            "war02",
+            "war04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">This is the Weight:</span><p>You prefer a heavy two-handed weapon. Increases two-handed weapon damage by an additional %10.</p>"
+    },
+    "war04": {
+	"id": "war04",
+        "color": 11,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "war03",
+            "war05",
+            "war10",
+            "war11"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "war05": {
+	"id": "war05",
+        "color": 11,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "war04",
+            "war06",
+            "war14",
+            "war12"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "war06": {
+	"id": "war06",
+        "color": 11,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "war05",
+            "war07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Heavy Metal:</span><p>You excel at footwork and spinning a heavy object into other objects. Gain an additional %15 bonus to two-handed damage.</p>"
+    },
+    "war07": {
+	"id": "war07",
+        "color": 11,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "war06",
+            "war08",
+            "war13",
+            "war15",
+            "cha07",
+            "war14",
+            "war12"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Strength:</span><p>Increases strength attribute by 1.</br>Strength increases melee damage by %5 and health by 10 points.</p>"
+    },
+    "war08": {
+	"id": "war08",
+        "color": 11,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "war07",
+            "war09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">2H Bonus, Speed:</span><p>Your attack speed with a two-handed weapon is increased, scales with strength.</p>"
+    },
+    "war09": {
+	"id": "war09",
+        "color": 11,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "war08"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Execute:</span><p>Attempt to finish off a stunned foe. This deals flat damage plus additional damage per point of stamina.</p>"
+    },
+    "war10": {
+	"id": "war10",
+        "color": 11,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "war02",
+            "war04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Juggernaut:</span><p>You can ignore interruption from enemy attacks. The threshold scales with strength, momentum stacks, and enemy size.</p>"
+    },
+    "war11": {
+	"id": "war11",
+        "color": 11,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "war02",
+            "war04"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Impact:</span><p>You attack with such force that your two-handed damage applies impact, increasing the enemy stun bar. Scales with strength.</p>"
+    },
+    "war12": {
+	"id": "war12",
+        "color": 11,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "war05",
+            "war07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Tackle Mod, Stampede:</span><p>Your tackle now deals damage and applies moderate impact.</p>"
+    },
+    "war13": {
+	"id": "war13",
+        "color": 11,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "war07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Crushing Blow:</span><p>Attacking while tackling, or immediately after, performs a powerful lunging vertical attack that applies moderate impact, double against a block.</p>"
+    },
+    "war14": {
+	"id": "war14",
+        "color": 11,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "bar01",
+            "war05",
+            "war07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Battlelust:</span><p>When a nearby enemy dies, gain a %1 melee damage bonus stack for 10 seconds. Number of stacks scales with enemy size and level difference.</p>"
+    },
+    "war15": {
+	"id": "war15",
+        "color": 11,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "war07"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Momentum:</span><p>When you attack, parry, or tackle, you gain a stack of momentum which increases your move and attack speed per stack. Some abilities can spend momentum gaining increased damage and/or effects. Stack duration scales with weapon size.</p>"
+    },
+    "wiz00": {
+	"id": "wiz00",
+        "color": 1,
+        "points": 1,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "wiz01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Wizard:</span><p>A weaver of the hidden arcane forces. A wizard's weapons are staves and wands, casting elemental spells, and outwitting their opponents.</p>Primary attribute: Intelligence"
+    },
+    "wiz01": {
+	"id": "wiz01",
+        "color": 1,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "wiz00",
+            "wiz02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "wiz02": {
+	"id": "wiz02",
+        "color": 1,
+        "points": 0,
+        "increment": 2,
+        "max": 2,
+        "links": [
+            "wiz01",
+            "wiz06",
+            "wiz05",
+            "wiz03",
+            "wiz04",
+            "wiz24",
+            "wiz22",
+            "wiz23"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">This is the way:</span><p>All elemental damage done is increased by an additional %10.</p>"
+    },
+    "wiz03": {
+	"id": "wiz03",
+        "color": 1,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "wiz02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Ice Bolt:</span><p>Cast a single bolt of ice, damaging enemies upon impact and slowing them afterwards.</p>"
+    },
+    "wiz04": {
+	"id": "wiz04",
+        "color": 1,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "wiz02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Chain lightning:</span><p>Cast a single bolt of lightning, damaging enemies upon impact and stunning them for 1 seconds.</p>"
+    },
+    "wiz05": {
+	"id": "wiz05",
+        "color": 1,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "wiz02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Fireball:</span><p>Cast a single ball of fire, damaging enemies upon impact and burning them for 3 seconds.</p>"
+    },
+    "wiz06": {
+	"id": "wiz06",
+        "color": 1,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "wiz02",
+            "wiz08",
+            "wiz07",
+            "wiz09"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "wiz07": {
+	"id": "wiz07",
+        "color": 1,
+        "points": 0,
+        "increment": 1,
+        "max": 5,
+        "links": [
+            "wiz06",
+            "wiz12"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Celerity:</span><p>Your intelligence is such that you cast spells %10 faster, as well as the frequency of channeled magic.</p>"
+    },
+    "wiz08": {
+	"id": "wiz08",
+        "color": 1,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "wiz06",
+            "wiz11"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "wiz09": {
+	"id": "wiz09",
+        "color": 1,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "wiz06",
+            "wiz10"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Wand Master:</span><p>You can now dual-wield wands, but you cannot block or parry with them.</p>"
+    },
+    "wiz10": {
+	"id": "wiz10",
+        "color": 1,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "wiz09",
+            "wiz13",
+            "wiz15"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Anomaly:</span><p>Inherent chaotic energies give your magic missiles a chance to bounce to a nearby target, chance is halved with each bounce</p>"
+    },
+    "wiz11": {
+	"id": "wiz11",
+        "color": 1,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "wiz08",
+            "wiz13",
+            "wiz14",
+            "wiz15"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "wiz12": {
+	"id": "wiz12",
+        "color": 1,
+        "points": 0,
+        "increment": 4,
+        "max": 4,
+        "links": [
+            "wiz07",
+            "wiz13",
+            "wiz14"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Spellshock:</span><p>Your magic crits now stun enemies. Duration scales with damage.</p>"
+    },
+    "wiz13": {
+	"id": "wiz13",
+        "color": 1,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "wiz11",
+            "wiz16",
+            "wiz12",
+            "wiz10"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Blink Mod, Mirror Image:</span><p>Your blink now leaves behind a mirror image that holds agro until destroyed. Targeting an image while blinking will instantly swap positions with it. This swap will free you from crowd control effects, transferring them to the image.</p>"
+    },
+    "wiz14": {
+	"id": "wiz14",
+        "color": 1,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "wiz12",
+            "wiz17",
+            "wiz11",
+            "nec01"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "wiz15": {
+	"id": "wiz15",
+        "color": 1,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "bat08",
+            "wiz10",
+            "wiz18",
+            "wiz11"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "wiz16": {
+	"id": "wiz16",
+        "color": 1,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "wiz13",
+            "wiz21",
+            "wiz18",
+            "wiz17",
+            "wiz19",
+            "wiz20"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">The Student:</span><p>Increases your elemental damage done by an additional %15.</p>"
+    },
+    "wiz17": {
+	"id": "wiz17",
+        "color": 1,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "wiz14",
+            "wiz16"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "wiz18": {
+	"id": "wiz18",
+        "color": 1,
+        "points": 0,
+        "increment": 1,
+        "max": 1,
+        "links": [
+            "wiz15",
+            "wiz16"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Intelligence:</span><p>Increases your intelligence attribute by 1.</br>Increases magic damage by %5 and magical crit chance by %1 per attribute point.</p>"
+    },
+    "wiz19": {
+	"id": "wiz19",
+        "color": 1,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "wiz16"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Ley Flow:</span><p>You are attuned to the unseen ley lines of reality. Gain a stacking mana regen bonus each second, lose stacks on spending mana (except imbues).</p>"
+    },
+    "wiz20": {
+	"id": "wiz20",
+        "color": 1,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "wiz16"
+        ],
+        "selections": ["Fire", "Ice", "Lightning"],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Elemental Bombard:</span><p>A slow casting, powerful elemental spell with a wide area and applies impact. Choose one: blizzard, fire meteor, storm strike.</p>"
+    },
+    "wiz21": {
+	"id": "wiz21",
+        "color": 1,
+        "points": 0,
+        "increment": 5,
+        "max": 5,
+        "links": [
+            "wiz16"
+        ],
+        "selections": ["Fire", "Ice", "Lightning"],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">The Master:</span><p>Select an element to master, and gain an additional %25 bonus to that elements damage.</p>"
+    },
+    "wiz22": {
+	"id": "wiz22",
+        "color": 1,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "wiz02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">White Wyvern's Breath:</span><p>Spew a cone of frost at enemies in front of you, damaging and slowing them for 3 seconds.</p>"
+    },
+    "wiz23": {
+	"id": "wiz23",
+        "color": 1,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "wiz02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Blue Wyvern's Breath:</span><p>Exhale a cone of lightning at enemies in front of you, damaging and stunning them for 0.5 seconds.</p>"
+    },
+    "wiz24": {
+	"id": "wiz24",
+        "color": 1,
+        "points": 0,
+        "increment": 3,
+        "max": 3,
+        "links": [
+            "wiz02"
+        ],
+        "selection": "",
+        "text": "<span class=\"nodeInfoTitle\">Red Wyvern's Breath:</span><p>Breath a cone of flames at enemies in front of you, damaging and burning them for 3 seconds.</p>"
+    }
+}
